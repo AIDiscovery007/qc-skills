@@ -1,4 +1,9 @@
 {
   "name": "qc-skills",
-  "skills": []
+  "skills": [
+    "./skills/third-party/grill-with-docs",
+    "./skills/third-party/grill-me",
+    "./skills/third-party/diagnose",
+    "./skills/third-party/tdd"
+  ]
 }
