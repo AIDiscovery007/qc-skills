@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+.cache/
+.ruff_cache/
+dist/
+build/
+tmp/
+*.log

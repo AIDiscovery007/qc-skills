@@ -1,0 +1,24 @@
+---
+name: skill-name
+description: Briefly state what this skill does. Use when the user asks for specific trigger scenarios.
+---
+
+# Skill Name
+
+## Purpose
+
+Describe the job this skill helps the agent do.
+
+说明这个 skill 帮 agent 完成什么任务。
+
+## Workflow
+
+1. Gather the minimum context needed.
+2. Execute the workflow using the repository's existing tools and conventions.
+3. Verify the result before reporting completion.
+
+## Notes
+
+- Keep `SKILL.md` concise.
+- Move long references into adjacent markdown files.
+- Add scripts only for deterministic repeatable operations.
