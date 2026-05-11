@@ -16,6 +16,7 @@ Current imports are from [mattpocock/skills](https://github.com/mattpocock/skill
 - [grill-me](grill-me/SKILL.md)
 - [grill-with-docs](grill-with-docs/SKILL.md)
 - [tdd](tdd/SKILL.md)
+- [write-a-skill](write-a-skill/SKILL.md)
 
 ## Maintenance Rules
 

@@ -15,6 +15,7 @@ This repository includes selected skills copied from community repositories. Thi
   - `skills/engineering/grill-with-docs` -> `skills/third-party/grill-with-docs`
   - `skills/engineering/tdd` -> `skills/third-party/tdd`
   - `skills/productivity/grill-me` -> `skills/third-party/grill-me`
+  - `skills/productivity/write-a-skill` -> `skills/third-party/write-a-skill`
 
 ### MIT License Notice
 

@@ -60,5 +60,6 @@ Imported from [mattpocock/skills](https://github.com/mattpocock/skills). See [TH
 - [grill-me](skills/third-party/grill-me/SKILL.md)
 - [grill-with-docs](skills/third-party/grill-with-docs/SKILL.md)
 - [tdd](skills/third-party/tdd/SKILL.md)
+- [write-a-skill](skills/third-party/write-a-skill/SKILL.md)
 
 以上 skills 移植自 [mattpocock/skills](https://github.com/mattpocock/skills)。来源与许可证信息见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
