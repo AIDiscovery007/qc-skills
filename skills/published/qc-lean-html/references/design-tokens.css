@@ -1,0 +1,28 @@
+:root {
+  --paper: #f7f3ed;
+  --ink: #1e1c19;
+  --muted: #756f66;
+  --line: #8b857b;
+  --accent: #b55332;
+  --radius: 14px;
+  --radius-small: 12px;
+  --border: 1px solid rgba(139, 133, 123, .35);
+  --space-page-x: 40px;
+  --space-section: 34px;
+  --space-card: 20px;
+}
+
+.qc-card {
+  border: var(--border);
+  border-radius: var(--radius);
+}
+
+.qc-focus {
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+}
+
+.qc-muted { color: var(--muted); }
+.qc-accent { color: var(--accent); }
+.qc-line { stroke: var(--line); }
+.qc-line-accent { stroke: var(--accent); }

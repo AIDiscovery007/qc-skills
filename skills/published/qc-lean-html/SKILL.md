@@ -12,9 +12,10 @@ Turn the user's request into one concise, useful HTML file.
 1. Infer the best information structure for this request.
 2. Choose `report`, `prototype`, or `other`, then pick a short ASCII slug.
 3. From the target repo root, run this skill's `scripts/prepare-output.sh <category> <slug>`.
-4. Write a complete HTML file to the printed path.
-5. Verify the file exists, is non-empty, and contains `<!doctype html>`, `<html`, and `<style`.
-6. Run `open <html-path>` to show it in the default browser.
+4. Copy `references/design-tokens.css` into the HTML's inline `<style>`.
+5. Write a complete HTML file to the printed path.
+6. Verify the file exists, is non-empty, and contains `<!doctype html>`, `<html`, and `<style`.
+7. Run `open <html-path>` to show it in the default browser.
 
 ## Priorities
 
@@ -22,9 +23,18 @@ Turn the user's request into one concise, useful HTML file.
 - Preserve the user's information; remove only filler and repetition.
 - Make the main point obvious first, then show only the support needed to trust it.
 - Use one self-contained file: inline CSS, system fonts, no external assets.
+- Do not link the token file; copy it inline so the HTML stays self-contained.
 - Default to no JavaScript; use tiny inline JavaScript only when interaction is necessary.
 - Use `report` for plans/reports/analysis, `prototype` for UI demos, and `other` otherwise.
 - Treat `docs/` as local output; the script keeps it ignored by Git.
+
+## Design Tokens
+
+- `references/design-tokens.css` is the only visual token source.
+- Use its exact values for `--paper`, `--ink`, `--muted`, `--line`, `--accent`, radius, border, and spacing.
+- Do not invent colors, second accents, gradients, or decorative color fields.
+- Express risk/success/warning through wording, layout, border, weight, and spacing, not new colors.
+- SVG markers, lines, nodes, and focus states must use these tokens.
 
 ## Information Structure
 
@@ -44,7 +54,7 @@ Turn the user's request into one concise, useful HTML file.
 
 ## Layout and Visuals
 
-- Use spacious layout, clear hierarchy, and at most four colors.
+- Use spacious layout, clear hierarchy, and the fixed token palette.
 - Keep each screen to 3-5 key ideas; do not crowd the page.
 - If a visual lowers effort, draw it; if a sentence or table is clearer, do not.
 - Every visual node must carry distinct information; merge anything that travels together.
@@ -69,5 +79,5 @@ Turn the user's request into one concise, useful HTML file.
 
 ## Self-check
 
-- Self-check: colors, density, whitespace, focal points, visual need, geometry, and wording must pass before opening.
+- Self-check: tokens, density, whitespace, focal points, visual need, geometry, and wording must pass before opening.
 - Final response: give the HTML path and one short note.
