@@ -24,6 +24,26 @@ Install all published skills:
 npx skills@latest add AIDiscovery007/qc-skills --all
 ```
 
+### OpenClaw compatibility / OpenClaw 兼容安装
+
+OpenClaw can install these GitHub-distributed skills through `npx skills`; do not use `clawhub install AIDiscovery007/qc-skills`, because ClawHub expects a registry slug, not an `owner/repo` source.
+
+Run from your OpenClaw workspace:
+
+```bash
+npx skills@latest add AIDiscovery007/qc-skills --agent openclaw --skill qc-essence qc-lean-html qc-skills-setup --copy -y
+```
+
+This writes skills into:
+
+```text
+./skills/qc-essence
+./skills/qc-lean-html
+./skills/qc-skills-setup
+```
+
+OpenClaw 可以继续通过 `npx skills` 从 GitHub 安装这些 skills；不要使用 `clawhub install AIDiscovery007/qc-skills`，因为 ClawHub 需要的是注册表 slug，不是 `owner/repo`。
+
 ## Structure / 目录结构
 
 ```text
