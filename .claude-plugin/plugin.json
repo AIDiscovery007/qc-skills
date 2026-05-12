@@ -3,11 +3,6 @@
   "skills": [
     "./skills/published/qc-skills-setup",
     "./skills/published/qc-essence",
-    "./skills/published/qc-lean-html",
-    "./skills/third-party/grill-with-docs",
-    "./skills/third-party/grill-me",
-    "./skills/third-party/diagnose",
-    "./skills/third-party/tdd",
-    "./skills/third-party/write-a-skill"
+    "./skills/published/qc-lean-html"
   ]
 }

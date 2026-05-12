@@ -12,7 +12,7 @@ List available skills:
 npx skills add https://github.com/AIDiscovery007/qc-skills --list
 ```
 
-Install original qc skills:
+Install a specific original skill:
 
 ```bash
 npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-essence
@@ -20,31 +20,11 @@ npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-lean-html
 npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-skills-setup
 ```
 
-Install all published skills:
+Install all original qc skills:
 
 ```bash
-npx skills add https://github.com/AIDiscovery007/qc-skills --all
+npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-essence qc-lean-html qc-skills-setup
 ```
-
-### OpenClaw compatibility / OpenClaw 兼容安装
-
-OpenClaw can install these GitHub-distributed skills through `npx skills`; do not use `clawhub install AIDiscovery007/qc-skills`, because ClawHub expects a registry slug, not a GitHub source.
-
-Run from your OpenClaw workspace:
-
-```bash
-npx skills add https://github.com/AIDiscovery007/qc-skills --agent openclaw --skill qc-essence qc-lean-html qc-skills-setup
-```
-
-This writes skills into:
-
-```text
-./skills/qc-essence
-./skills/qc-lean-html
-./skills/qc-skills-setup
-```
-
-OpenClaw 可以继续通过 `npx skills` 从 GitHub 安装这些 skills；不要使用 `clawhub install AIDiscovery007/qc-skills`，因为 ClawHub 需要的是注册表 slug，不是 GitHub source。
 
 ## Structure / 目录结构
 
@@ -55,19 +35,19 @@ skills/third-party/         # Imported third-party skills / 移植的第三方 s
 skills/incubating/          # Draft skills / 草稿 skills
 skills/archive/             # Retired skills / 归档 skills
 templates/skill/            # Authoring template / 创作模板
-scripts/list-skills.sh      # Lists distributable SKILL.md files / 列出可分发 skills
+scripts/list-skills.sh      # Lists published SKILL.md files / 列出已发布 skills
 ```
 
 ## Publishing Rules / 发布规则
 
 - Mature original skills in `skills/published/` may be included in `.claude-plugin/plugin.json`.
-- Imported community skills live in `skills/third-party/` and require source and license attribution in `THIRD_PARTY_NOTICES.md`.
+- Imported community skills live in `skills/third-party/` for personal use only and are not included in `.claude-plugin/plugin.json`.
 - `skills/incubating/` and `skills/archive/` are never added to the manifest.
 - Every published skill must contain a `SKILL.md`.
 - Skill `name` and `description` should be in English for reliable agent triggering.
 
 - `skills/published/` 下成熟的原创 skill 可以写入 `.claude-plugin/plugin.json`。
-- 社区移植的 skill 放在 `skills/third-party/`，并必须在 `THIRD_PARTY_NOTICES.md` 记录来源和许可证归属。
+- 社区移植的 skill 放在 `skills/third-party/` 供个人使用，不进入 `.claude-plugin/plugin.json`。
 - `skills/incubating/` 和 `skills/archive/` 不进入分发清单。
 - 每个正式发布的 skill 都必须包含 `SKILL.md`。
 - skill 的 `name` 和 `description` 建议使用英文，便于 agent 稳定触发。
@@ -86,7 +66,7 @@ Distributed by `npx skills --list` from `skills/published/`.
 
 ### Third-party / 第三方
 
-Imported from [mattpocock/skills](https://github.com/mattpocock/skills). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for source and license details.
+Imported from [mattpocock/skills](https://github.com/mattpocock/skills) for personal repository use only. They are kept in this repo with source and license attribution, but they are not distributed through `npx skills add https://github.com/AIDiscovery007/qc-skills`.
 
 - [diagnose](skills/third-party/diagnose/SKILL.md)
 - [grill-me](skills/third-party/grill-me/SKILL.md)
@@ -94,4 +74,4 @@ Imported from [mattpocock/skills](https://github.com/mattpocock/skills). See [TH
 - [tdd](skills/third-party/tdd/SKILL.md)
 - [write-a-skill](skills/third-party/write-a-skill/SKILL.md)
 
-以上 skills 移植自 [mattpocock/skills](https://github.com/mattpocock/skills)。来源与许可证信息见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+以上 skills 移植自 [mattpocock/skills](https://github.com/mattpocock/skills)，仅保留在仓库内供个人使用，不通过本仓库的安装命令分发。来源与许可证信息见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
