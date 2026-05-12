@@ -1,6 +1,9 @@
 {
   "name": "qc-skills",
   "skills": [
+    "./skills/published/qc-skills-setup",
+    "./skills/published/qc-essence",
+    "./skills/published/qc-lean-html",
     "./skills/third-party/grill-with-docs",
     "./skills/third-party/grill-me",
     "./skills/third-party/diagnose",

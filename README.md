@@ -52,15 +52,15 @@ scripts/list-skills.sh      # Lists distributable SKILL.md files / 列出可分�
 
 ## Current Skills / 当前 Skills
 
-### Original drafts / 原创草稿
+### Original / 原创
 
-Not distributed by `npx skills --list` until promoted from `skills/incubating/`.
+Distributed by `npx skills --list` from `skills/published/`.
 
-- [qc-skills-setup](skills/incubating/qc-skills-setup/SKILL.md)
-- [qc-essence](skills/incubating/qc-essence/SKILL.md)
-- [qc-lean-html](skills/incubating/qc-lean-html/SKILL.md)
+- [qc-skills-setup](skills/published/qc-skills-setup/SKILL.md)
+- [qc-essence](skills/published/qc-essence/SKILL.md)
+- [qc-lean-html](skills/published/qc-lean-html/SKILL.md)
 
-这些草稿不会出现在 `npx skills --list` 中，直到从 `skills/incubating/` 晋升。
+这些原创 skills 已从 `skills/incubating/` 晋升到 `skills/published/`，并进入分发清单。
 
 ### Third-party / 第三方
 
