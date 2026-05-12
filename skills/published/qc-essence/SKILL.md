@@ -1,6 +1,6 @@
 ---
 name: qc-essence
-description: Performs model-guided essence extraction from complex input into a final judgment, core pillars, and minimal reasons for decision clarity. Use when the user wants to strip a topic, article, product, plan, or problem down to its decisive essence.
+description: Performs model-guided essence extraction into a final judgment, memorable aha moment, core pillars, and minimal reasons for decision clarity. Use when the user wants to strip a topic, article, product, plan, or problem down to its decisive essence.
 ---
 
 # QC Essence
@@ -14,7 +14,7 @@ Compress complex input to its irreducible essence. Think deeply; answer briefly.
 3. Silently spread out the representative surface facts, claims, symptoms, and examples.
 4. Strip filler, repeated claims, decorative wording, and points that only rename another point.
 5. Find the smallest set of independent generators that can explain the whole.
-6. Reverse-challenge the result, then output only the final judgment, pillars, and minimal reasons.
+6. Reverse-challenge the result, then output only the final judgment, aha moment, pillars, and minimal reasons.
 
 ## Internal Stack
 
@@ -48,15 +48,15 @@ Use the challenge to revise the answer. Do not output the challenge.
 
 ## Structure
 
-Infer the pillar relationship: parallel, layered, chain, loop, spectrum, matrix, or network.
-Default: do not show it. Add `结构：...` only when it reduces cognitive load.
+Infer the pillar relationship: parallel, layered, chain, loop, spectrum, matrix, or network; add `结构：...` only when it reduces cognitive load.
 
 ## Output Rules
 
 - Use the user's language; default to Chinese.
-- Do not show the reasoning process.
-- Do not show model names, reverse challenges, essays, prefaces, or transition prose.
-- Include a final judgment, core pillars, and brief reasons.
+- Do not show reasoning, model names, reverse challenges, essays, prefaces, or transition prose.
+- Include a final judgment, mandatory aha moment, core pillars, and brief reasons.
+- Put the aha moment immediately after `结论`; format exactly `**_..._**`, with no label.
+- Make it one reflective, philosophical sentence distilled from the conclusion and pillars; add no new claim, slogan, mystical metaphor, or empty flourish.
 - Do not force a fixed number of pillars; use as few as truth allows.
 - Each reason should explain why that pillar is irreducible, ideally in one sentence.
 - If context is thin, still answer and add one line: `Assumption: ...`
@@ -68,6 +68,8 @@ Use this shape unless another shorter shape is clearer:
 ```md
 结论：...
 
+**_..._**
+
 结构：...
 
 支柱：
@@ -78,8 +80,7 @@ Use this shape unless another shorter shape is clearer:
 Assumption: ...
 ```
 
-Omit `Assumption` when unnecessary.
-Omit `结构` unless it reduces cognitive load.
+Omit `Assumption` when unnecessary; omit `结构` unless it reduces cognitive load.
 
 ## Bad Examples
 
@@ -88,6 +89,7 @@ Omit `结构` unless it reduces cognitive load.
 - Bad: surface facts are labeled as pillars. Fix: find the generator behind them.
 - Bad: every answer becomes a three-layer drill or a 2x2. Fix: infer the real structure.
 - Bad: no counterexample was considered. Fix: challenge the opposite conclusion before finalizing.
+- Bad: the aha moment is a motivational slogan. Fix: distill the real insight into one grounded sentence.
 - Bad: the explanation is longer than the conclusion. Fix: keep only the reason needed to trust it.
 
 ## Final Check
