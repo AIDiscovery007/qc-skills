@@ -27,7 +27,14 @@ Turn the user's request into one dense, useful HTML file.
 - Use spacious layout, clear hierarchy, and at most four colors.
 - Keep each screen to 3-5 key ideas; do not crowd the page.
 - If one sentence works, do not write two.
-- If a visual works, do not use plain text.
+- If a visual lowers effort, draw it; if a sentence or table is clearer, do not.
 - If structure works, do not make a prose pile.
-- Self-check: colors, density, whitespace, and unnecessary wording must pass before opening.
+- Every visual node must carry distinct information; merge anything that travels together.
+- Use one or two focal elements only; accent more than that means you have not chosen.
+- Prefer inline SVG for flows, relations, axes, hierarchy, and timelines.
+- Use HTML/CSS for simple cards, bars, matrices, and layout.
+- Pick the visual grammar: `flow`, `timeline`, `hierarchy`, `matrix`, `comparison`, or `metric`.
+- Keep diagrams sparse: 3-7 nodes is ideal; above 9, split or simplify.
+- SVG must explain, not decorate.
+- Self-check: colors, density, whitespace, focal points, visual need, and wording must pass before opening.
 - Final response: give the HTML path and one short note.
