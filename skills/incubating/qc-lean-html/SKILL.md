@@ -1,9 +1,9 @@
 ---
-name: lean-html
+name: qc-lean-html
 description: Renders user requirements into compact, self-contained HTML files. Use when the user wants a plan, prototype, report, analysis, or idea visualized as efficient HTML.
 ---
 
-# Lean HTML
+# QC Lean HTML
 
 Turn the user's request into one concise, useful HTML file.
 
