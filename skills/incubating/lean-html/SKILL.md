@@ -9,8 +9,8 @@ Turn the user's request into one dense, useful HTML file.
 
 ## Workflow
 
-1. Understand the request and choose `report`, `prototype`, or `other`.
-2. Pick a short ASCII slug.
+1. Infer the best information structure for this request.
+2. Choose `report`, `prototype`, or `other`, then pick a short ASCII slug.
 3. From the target repo root, run this skill's `scripts/prepare-output.sh <category> <slug>`.
 4. Write a complete HTML file to the printed path.
 5. Verify the file exists, is non-empty, and contains `<!doctype html>`, `<html`, and `<style`.
@@ -24,6 +24,7 @@ Turn the user's request into one dense, useful HTML file.
 - Default to no JavaScript; use tiny inline JavaScript only when interaction is necessary.
 - Use `report` for plans/reports/analysis, `prototype` for UI demos, and `other` otherwise.
 - Treat `docs/` as local output; the script keeps it ignored by Git.
+- Do not force a fixed layout; choose the structure that best fits the request.
 - Use spacious layout, clear hierarchy, and at most four colors.
 - Keep each screen to 3-5 key ideas; do not crowd the page.
 - If one sentence works, do not write two.
@@ -36,5 +37,10 @@ Turn the user's request into one dense, useful HTML file.
 - Pick the visual grammar: `flow`, `timeline`, `hierarchy`, `matrix`, `comparison`, or `metric`.
 - Keep diagrams sparse: 3-7 nodes is ideal; above 9, split or simplify.
 - SVG must explain, not decorate.
-- Self-check: colors, density, whitespace, focal points, visual need, and wording must pass before opening.
+- SVG arrows must terminate on target boundaries, not empty space or node interiors.
+- Route lines around text and key shapes; never let text sit directly on a line.
+- Put labels beside lines or mask them with a background rect.
+- Use separate connection points when multiple lines enter one node.
+- Keep text inside node safe areas, away from borders, arrows, and line crossings.
+- Self-check: colors, density, whitespace, focal points, visual need, geometry, and wording must pass before opening.
 - Final response: give the HTML path and one short note.
