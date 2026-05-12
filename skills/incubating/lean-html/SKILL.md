@@ -18,10 +18,16 @@ Turn the user's request into one dense, useful HTML file.
 
 ## Rules
 
-- Preserve the user's information; remove only filler.
+- Philosophy: strip the request to its useful shape; less is more.
+- Preserve the user's information; remove only filler and repetition.
 - Use one self-contained file: inline CSS, system fonts, no external assets.
 - Default to no JavaScript; use tiny inline JavaScript only when interaction is necessary.
 - Use `report` for plans/reports/analysis, `prototype` for UI demos, and `other` otherwise.
 - Treat `docs/` as local output; the script keeps it ignored by Git.
-- Prefer semantic HTML, compact copy, and clear hierarchy over decoration.
+- Use spacious layout, clear hierarchy, and at most four colors.
+- Keep each screen to 3-5 key ideas; do not crowd the page.
+- If one sentence works, do not write two.
+- If a visual works, do not use plain text.
+- If structure works, do not make a prose pile.
+- Self-check: colors, density, whitespace, and unnecessary wording must pass before opening.
 - Final response: give the HTML path and one short note.
