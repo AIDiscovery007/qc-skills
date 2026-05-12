@@ -2,24 +2,15 @@
 set -euo pipefail
 
 usage() {
-  echo "usage: prepare-output.sh <report|prototype|other> <slug>" >&2
+  echo "usage: prepare-output.sh <slug>" >&2
 }
 
-if [[ $# -ne 2 ]]; then
+if [[ $# -ne 1 ]]; then
   usage
   exit 2
 fi
 
-category="$1"
-raw_slug="$2"
-
-case "$category" in
-  report|prototype|other) ;;
-  *)
-    echo "error: category must be report, prototype, or other" >&2
-    exit 2
-    ;;
-esac
+raw_slug="$1"
 
 slug="$(
   printf '%s' "$raw_slug" |
@@ -31,7 +22,7 @@ if [[ -z "$slug" ]]; then
   slug="render"
 fi
 
-mkdir -p docs/report docs/prototype docs/other
+mkdir -p docs/report
 
 gitignore=".gitignore"
 if [[ ! -f "$gitignore" ]]; then
@@ -46,7 +37,7 @@ elif ! grep -Fxq '/docs/' "$gitignore"; then
   printf '/docs/\n' >> "$gitignore"
 fi
 
-candidate="docs/$category/$slug.html"
+candidate="docs/report/$slug.html"
 if [[ ! -e "$candidate" ]]; then
   printf '%s\n' "$candidate"
   exit 0
@@ -54,7 +45,7 @@ fi
 
 i=2
 while true; do
-  candidate="docs/$category/$slug-$i.html"
+  candidate="docs/report/$slug-$i.html"
   if [[ ! -e "$candidate" ]]; then
     printf '%s\n' "$candidate"
     exit 0

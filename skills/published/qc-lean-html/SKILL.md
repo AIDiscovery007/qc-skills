@@ -1,6 +1,6 @@
 ---
 name: qc-lean-html
-description: Renders user requirements into compact, self-contained HTML reports, visualizations, and prototypes. Use when the user wants a plan, prototype, report, analysis, or idea visualized as efficient self-contained HTML.
+description: Renders complex content into compact, self-contained HTML reports and visualizations. Use when the user wants a plan, report, analysis, article, or idea understood and rendered as efficient self-contained HTML.
 ---
 
 # QC Lean HTML
@@ -10,8 +10,8 @@ Turn the user's request into one concise, useful HTML file.
 ## Workflow
 
 1. Infer the best information structure for this request.
-2. Choose `report`, `prototype`, or `other`, then pick a short ASCII slug.
-3. From the target repo root, run this skill's `scripts/prepare-output.sh <category> <slug>`.
+2. Pick a short ASCII slug.
+3. From the target repo root, run this skill's `scripts/prepare-output.sh <slug>`.
 4. Copy `references/design-tokens.css` into the HTML's inline `<style>`.
 5. Write a complete HTML file to the printed path.
 6. Verify the file exists, is non-empty, and contains `<!doctype html>`, `<html`, and `<style`.
@@ -25,7 +25,7 @@ Turn the user's request into one concise, useful HTML file.
 - Use one self-contained file: inline CSS, system fonts, no external assets.
 - Do not link the token file; copy it inline so the HTML stays self-contained.
 - Default to no JavaScript; use tiny inline JavaScript only when interaction is necessary.
-- Use `report` for plans/reports/analysis, `prototype` for UI demos, and `other` otherwise.
+- Use `docs/report/` for output; this skill is for content understanding and rendering, not UI prototyping.
 - Treat `docs/` as local output; the script keeps it ignored by Git.
 
 ## Design Tokens
