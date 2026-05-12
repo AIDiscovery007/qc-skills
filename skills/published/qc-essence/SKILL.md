@@ -1,6 +1,6 @@
 ---
 name: qc-essence
-description: Extracts the irreducible essence of complex input into a final judgment, core pillars, and minimal reasons. Use when the user wants to strip a topic, plan, article, product, or problem down to its decisive essence.
+description: Performs essence extraction from complex input into a final judgment, core pillars, and minimal reasons for decision clarity. Use when the user wants to strip a topic, plan, article, product, or problem down to its decisive essence.
 ---
 
 # QC Essence

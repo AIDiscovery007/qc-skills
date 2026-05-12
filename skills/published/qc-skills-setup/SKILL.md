@@ -1,6 +1,6 @@
 ---
 name: qc-skills-setup
-description: Sets up qc-skills compatibility files for agent users. Use when bootstrapping qc-skills, bridging AGENTS.md to CLAUDE.md, or preparing Claude Code to read Codex-style instructions.
+description: Sets up qc-skills compatibility files for OpenClaw, Claude Code, and agent users by bridging AGENTS.md to CLAUDE.md. Use when bootstrapping qc-skills or preparing Claude-style agents to read Codex-style instructions.
 ---
 
 # QC Skills Setup

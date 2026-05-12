@@ -9,29 +9,31 @@ Personal agent skills by Qiao Chao, organized for lightweight iteration and GitH
 List available skills:
 
 ```bash
-npx skills@latest add AIDiscovery007/qc-skills --list
+npx skills add https://github.com/AIDiscovery007/qc-skills --list
 ```
 
-Install a specific skill:
+Install original qc skills:
 
 ```bash
-npx skills@latest add AIDiscovery007/qc-skills --skill <skill-name>
+npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-essence
+npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-lean-html
+npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-skills-setup
 ```
 
 Install all published skills:
 
 ```bash
-npx skills@latest add AIDiscovery007/qc-skills --all
+npx skills add https://github.com/AIDiscovery007/qc-skills --all
 ```
 
 ### OpenClaw compatibility / OpenClaw 兼容安装
 
-OpenClaw can install these GitHub-distributed skills through `npx skills`; do not use `clawhub install AIDiscovery007/qc-skills`, because ClawHub expects a registry slug, not an `owner/repo` source.
+OpenClaw can install these GitHub-distributed skills through `npx skills`; do not use `clawhub install AIDiscovery007/qc-skills`, because ClawHub expects a registry slug, not a GitHub source.
 
 Run from your OpenClaw workspace:
 
 ```bash
-npx skills@latest add AIDiscovery007/qc-skills --agent openclaw --skill qc-essence qc-lean-html qc-skills-setup --copy -y
+npx skills add https://github.com/AIDiscovery007/qc-skills --agent openclaw --skill qc-essence qc-lean-html qc-skills-setup
 ```
 
 This writes skills into:
@@ -42,7 +44,7 @@ This writes skills into:
 ./skills/qc-skills-setup
 ```
 
-OpenClaw 可以继续通过 `npx skills` 从 GitHub 安装这些 skills；不要使用 `clawhub install AIDiscovery007/qc-skills`，因为 ClawHub 需要的是注册表 slug，不是 `owner/repo`。
+OpenClaw 可以继续通过 `npx skills` 从 GitHub 安装这些 skills；不要使用 `clawhub install AIDiscovery007/qc-skills`，因为 ClawHub 需要的是注册表 slug，不是 GitHub source。
 
 ## Structure / 目录结构
 

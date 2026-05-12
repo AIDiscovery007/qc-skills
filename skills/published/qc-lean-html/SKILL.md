@@ -1,6 +1,6 @@
 ---
 name: qc-lean-html
-description: Renders user requirements into compact, self-contained HTML files. Use when the user wants a plan, prototype, report, analysis, or idea visualized as efficient HTML.
+description: Renders user requirements into compact, self-contained HTML reports, visualizations, and prototypes. Use when the user wants a plan, prototype, report, analysis, or idea visualized as efficient self-contained HTML.
 ---
 
 # QC Lean HTML
