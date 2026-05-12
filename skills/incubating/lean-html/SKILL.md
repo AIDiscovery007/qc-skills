@@ -5,7 +5,7 @@ description: Renders user requirements into compact, self-contained HTML files. 
 
 # Lean HTML
 
-Turn the user's request into one dense, useful HTML file.
+Turn the user's request into one concise, useful HTML file.
 
 ## Workflow
 
@@ -16,31 +16,58 @@ Turn the user's request into one dense, useful HTML file.
 5. Verify the file exists, is non-empty, and contains `<!doctype html>`, `<html`, and `<style`.
 6. Run `open <html-path>` to show it in the default browser.
 
-## Rules
+## Priorities
 
 - Philosophy: strip the request to its useful shape; less is more.
 - Preserve the user's information; remove only filler and repetition.
+- Make the main point obvious first, then show only the support needed to trust it.
 - Use one self-contained file: inline CSS, system fonts, no external assets.
 - Default to no JavaScript; use tiny inline JavaScript only when interaction is necessary.
 - Use `report` for plans/reports/analysis, `prototype` for UI demos, and `other` otherwise.
 - Treat `docs/` as local output; the script keeps it ignored by Git.
+
+## Information Structure
+
 - Do not force a fixed layout; choose the structure that best fits the request.
+- Lead with one conclusion, decision, or tension; support it with 3-5 key ideas per screen.
+- Pick the visual grammar that matches the relationship:
+  `flow`, `timeline`, `hierarchy`, `matrix`, `comparison`, or `metric`.
+- If structure works, do not make a prose pile.
+- If one sentence works, do not write two.
+
+## Emphasis Logic
+
+- Emphasize only what changes the user's understanding: conclusion, tradeoff, risk, or next action.
+- Use one primary focal element; use a second only for contrast or consequence.
+- Use accent color sparingly; more than two accents means the priority is unclear.
+- Keep secondary information muted, grouped, or below the fold.
+
+## Layout and Visuals
+
 - Use spacious layout, clear hierarchy, and at most four colors.
 - Keep each screen to 3-5 key ideas; do not crowd the page.
-- If one sentence works, do not write two.
 - If a visual lowers effort, draw it; if a sentence or table is clearer, do not.
-- If structure works, do not make a prose pile.
 - Every visual node must carry distinct information; merge anything that travels together.
-- Use one or two focal elements only; accent more than that means you have not chosen.
 - Prefer inline SVG for flows, relations, axes, hierarchy, and timelines.
 - Use HTML/CSS for simple cards, bars, matrices, and layout.
-- Pick the visual grammar: `flow`, `timeline`, `hierarchy`, `matrix`, `comparison`, or `metric`.
 - Keep diagrams sparse: 3-7 nodes is ideal; above 9, split or simplify.
 - SVG must explain, not decorate.
+
+## SVG Geometry
+
 - SVG arrows must terminate on target boundaries, not empty space or node interiors.
 - Route lines around text and key shapes; never let text sit directly on a line.
 - Put labels beside lines or mask them with a background rect.
 - Use separate connection points when multiple lines enter one node.
 - Keep text inside node safe areas, away from borders, arrows, and line crossings.
+
+## Bad Examples
+
+- Bad: ten equal cards with the same weight. Fix: choose one lead point and group the rest.
+- Bad: an arrow points near a box or crosses a label. Fix: connect to the box edge and reroute.
+- Bad: a diagram repeats what one sentence says. Fix: replace it with the sentence.
+
+## Self-check
+
 - Self-check: colors, density, whitespace, focal points, visual need, geometry, and wording must pass before opening.
 - Final response: give the HTML path and one short note.
