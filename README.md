@@ -52,6 +52,14 @@ scripts/list-skills.sh      # Lists distributable SKILL.md files / 列出可分�
 
 ## Current Skills / 当前 Skills
 
+### Original drafts / 原创草稿
+
+Not distributed by `npx skills --list` until promoted from `skills/incubating/`.
+
+- [qc-skills-setup](skills/incubating/qc-skills-setup/SKILL.md)
+
+这些草稿不会出现在 `npx skills --list` 中，直到从 `skills/incubating/` 晋升。
+
 ### Third-party / 第三方
 
 Imported from [mattpocock/skills](https://github.com/mattpocock/skills). See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for source and license details.
