@@ -1,36 +1,61 @@
 ---
 name: qc-essence
-description: Performs essence extraction from complex input into a final judgment, core pillars, and minimal reasons for decision clarity. Use when the user wants to strip a topic, plan, article, product, or problem down to its decisive essence.
+description: Performs model-guided essence extraction from complex input into a final judgment, core pillars, and minimal reasons for decision clarity. Use when the user wants to strip a topic, article, product, plan, or problem down to its decisive essence.
 ---
 
 # QC Essence
 
-Compress complex input to its irreducible essence.
+Compress complex input to its irreducible essence. Think deeply; answer briefly.
 
 ## Workflow
 
 1. Read the user's input directly; do not interview.
 2. If there is no object to analyze, ask for the object in one short sentence.
-3. Strip filler, examples, repeated claims, and surface wording.
-4. Find the smallest set of independent pillars that can explain the whole.
-5. Output only the final judgment, the pillars, and minimal reasons.
+3. Silently spread out the representative surface facts, claims, symptoms, and examples.
+4. Strip filler, repeated claims, decorative wording, and points that only rename another point.
+5. Find the smallest set of independent generators that can explain the whole.
+6. Reverse-challenge the result, then output only the final judgment, pillars, and minimal reasons.
+
+## Internal Stack
+
+Use silently; do not name these models in the answer:
+
+- First principles: what must be true for this to work or matter?
+- Causal generation: what few causes produce most surface facts?
+- Constraint/tradeoff: what bottleneck, tension, or scarce resource shapes the outcome?
+- System structure: parallel, layered, chained, loop, spectrum, matrix, or network?
+- Counterfactual: what would break, invert, or weaken the conclusion?
 
 ## Internal Tests
-
-Run these silently before answering:
 
 - Necessity: removing this pillar leaves something important unexplained.
 - Independence: this pillar is not a restatement of another pillar.
 - Generativity: this pillar explains multiple surface facts, not just one detail.
 - Compression: two pillars cannot merge without losing meaning.
+- Back-generation: this pillar can explain back to the user's main facts or examples.
 
 If a pillar fails, merge it, delete it, or replace it.
+
+## Reverse Challenge
+
+Before answering, attack your own result:
+
+- What is the strongest opposite conclusion?
+- Which pillar is a surface symptom, too broad, or actually redundant?
+- Which missing pillar would collapse the conclusion?
+
+Use the challenge to revise the answer. Do not output the challenge.
+
+## Structure
+
+Infer the pillar relationship: parallel, layered, chain, loop, spectrum, matrix, or network.
+Default: do not show it. Add `结构：...` only when it reduces cognitive load.
 
 ## Output Rules
 
 - Use the user's language; default to Chinese.
 - Do not show the reasoning process.
-- Do not write an essay, preface, summary-of-summary, or transition prose.
+- Do not show model names, reverse challenges, essays, prefaces, or transition prose.
 - Include a final judgment, core pillars, and brief reasons.
 - Do not force a fixed number of pillars; use as few as truth allows.
 - Each reason should explain why that pillar is irreducible, ideally in one sentence.
@@ -43,6 +68,8 @@ Use this shape unless another shorter shape is clearer:
 ```md
 结论：...
 
+结构：...
+
 支柱：
 
 - ...：...
@@ -52,13 +79,17 @@ Assumption: ...
 ```
 
 Omit `Assumption` when unnecessary.
+Omit `结构` unless it reduces cognitive load.
 
 ## Bad Examples
 
 - Bad: ten key takeaways. Fix: keep compressing until only irreducible pillars remain.
 - Bad: two pillars say the same thing in different words. Fix: merge them.
+- Bad: surface facts are labeled as pillars. Fix: find the generator behind them.
+- Bad: every answer becomes a three-layer drill or a 2x2. Fix: infer the real structure.
+- Bad: no counterexample was considered. Fix: challenge the opposite conclusion before finalizing.
 - Bad: the explanation is longer than the conclusion. Fix: keep only the reason needed to trust it.
 
 ## Final Check
 
-**Before replying, ask**: is this the shortest answer that preserves the user's real information?
+**Before replying, ask**: did I find generators, survive the strongest reverse challenge, and preserve the user's real information in the shortest form?
