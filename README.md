@@ -18,6 +18,7 @@ Install a specific original skill:
 npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-essence
 npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-lean-html
 npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-skills-setup
+npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-image-series
 ```
 
 Install all original qc skills:
@@ -58,5 +59,6 @@ Distributed by `npx skills --list` from `skills/published/`.
 - [qc-skills-setup](skills/published/qc-skills-setup/SKILL.md)
 - [qc-essence](skills/published/qc-essence/SKILL.md)
 - [qc-lean-html](skills/published/qc-lean-html/SKILL.md)
+- [qc-image-series](skills/published/qc-image-series/SKILL.md)
 
 这些原创 skills 已从 `skills/incubating/` 晋升到 `skills/published/`，并进入分发清单。

@@ -3,6 +3,7 @@
   "skills": [
     "./skills/published/qc-skills-setup",
     "./skills/published/qc-essence",
-    "./skills/published/qc-lean-html"
+    "./skills/published/qc-lean-html",
+    "./skills/published/qc-image-series"
   ]
 }

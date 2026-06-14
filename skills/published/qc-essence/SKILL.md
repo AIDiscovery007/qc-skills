@@ -46,13 +46,9 @@ Before answering, attack your own result:
 
 Use the challenge to revise the answer. Do not output the challenge.
 
-## Structure
-
-Infer the pillar relationship: parallel, layered, chain, loop, spectrum, matrix, or network; add `结构：...` only when it reduces cognitive load.
-
 ## Output Rules
 
-- Use the user's language; default to Chinese.
+- Use the user's language; default to the language of the user's input.
 - Do not show reasoning, model names, reverse challenges, essays, prefaces, or transition prose.
 - Include a final judgment, mandatory aha moment, core pillars, and brief reasons.
 - Put the aha moment immediately after `结论`; format exactly `**_..._**`, with no label.
@@ -70,8 +66,6 @@ Use this shape unless another shorter shape is clearer:
 
 **_..._**
 
-结构：...
-
 支柱：
 
 - ...：...
@@ -80,7 +74,7 @@ Use this shape unless another shorter shape is clearer:
 Assumption: ...
 ```
 
-Omit `Assumption` when unnecessary; omit `结构` unless it reduces cognitive load.
+Omit `Assumption` when unnecessary.
 
 ## Bad Examples
 
