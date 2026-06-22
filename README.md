@@ -40,6 +40,7 @@ These are the skills exposed through `.claude-plugin/plugin.json`.
 - [qc-think-alone](skills/incubating/qc-think-alone/SKILL.md) - challenge assumptions and reason independently before agreeing.
 - [qc-investment-analysis](skills/incubating/qc-investment-analysis/SKILL.md) - analyze markets through dominant constraints, transmission, and portfolio expression.
 - [qc-expert-casting](skills/incubating/qc-expert-casting/SKILL.md) - cast one public expert lens for a problem and generate a prompt suffix or Sub Agent `agent.md`.
+- [qc-uiux-design](skills/incubating/qc-uiux-design/SKILL.md) - design, implement, review, and debug purpose-led UI/UX interaction behavior and motion polish.
 
 ## Repo Map / 仓库结构
 
