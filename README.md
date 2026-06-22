@@ -1,46 +1,60 @@
 # qc-skills
 
-Personal agent skills by Qiao Chao, organized for lightweight iteration and GitHub distribution through `npx skills`.
+Small personal agent skills for clear thinking, compact outputs, and lightweight distribution.
 
-乔超的个人 agent skills 仓库，用于轻量收集、创建、迭代，并通过 GitHub + `npx skills` 分发。
+个人 agent skills 仓库：小、可读、方便 fork，通过 GitHub + `npx skills` 分发。
 
-## Install / 安装
+## Quickstart / 快速开始
 
-List available skills:
+List what this repo currently distributes:
 
 ```bash
 npx skills add https://github.com/AIDiscovery007/qc-skills --list
 ```
 
-Install a specific original skill:
+Install one skill:
 
 ```bash
 npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-essence
-npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-lean-html
-npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-skills-setup
-npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-image-series
-npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-think-alone
-npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-investment-analysis
 ```
 
-Install all original qc skills:
+Install everything in the manifest:
 
 ```bash
 npx skills add https://github.com/AIDiscovery007/qc-skills --all
 ```
 
-## Structure / 目录结构
+## Reference / 技能列表
+
+These are the skills exposed through `.claude-plugin/plugin.json`.
+
+### Published / 正式发布
+
+- [qc-skills-setup](skills/published/qc-skills-setup/SKILL.md) - bridge `AGENTS.md` into Claude-style agent instructions.
+- [qc-essence](skills/published/qc-essence/SKILL.md) - compress a topic, article, plan, or problem to its decisive essence.
+- [qc-lean-html](skills/published/qc-lean-html/SKILL.md) - render dense content into a compact, self-contained HTML report.
+- [qc-image-series](skills/published/qc-image-series/SKILL.md) - create consistent prompt specs for covers, carousels, and image series.
+
+### Incubating / 迭代中
+
+- [qc-think-alone](skills/incubating/qc-think-alone/SKILL.md) - challenge assumptions and reason independently before agreeing.
+- [qc-investment-analysis](skills/incubating/qc-investment-analysis/SKILL.md) - analyze markets through dominant constraints, transmission, and portfolio expression.
+
+## Repo Map / 仓库结构
 
 ```text
-.claude-plugin/plugin.json  # Distribution manifest / 分发清单
-skills/published/           # Formally published mature skills / 正式发布的成熟 skills
-skills/incubating/          # Draft and iteration-stage skills / 草稿和迭代版 skills
-skills/archive/             # Retired skills / 归档 skills
-templates/skill/            # Authoring template / 创作模板
-scripts/list-skills.sh      # Lists formal published SKILL.md files / 列出正式发布 skills
+.claude-plugin/plugin.json  # distribution manifest
+skills/published/           # mature skills
+skills/incubating/          # drafts and iteration releases
+skills/archive/             # retired skills
+templates/skill/            # authoring template
+scripts/list-skills.sh      # lists published SKILL.md files
 ```
 
-## Distribution Rules / 分发规则
+<details>
+<summary>Maintainer notes / 维护者说明</summary>
+
+### Distribution Rules / 分发规则
 
 - `.claude-plugin/plugin.json` is the distribution manifest used by `npx skills`.
 - "Release/publish a version" means adding the skill's current path to the manifest; it does not require moving the skill to `skills/published/`.
@@ -58,24 +72,4 @@ scripts/list-skills.sh      # Lists formal published SKILL.md files / 列出正�
 - 每个可分发的 skill 都必须包含 `SKILL.md`。
 - skill 的 `name` 和 `description` 建议使用英文，便于 agent 稳定触发。
 
-## Current Skills / 当前 Skills
-
-### Original / 原创
-
-Distributed by `npx skills --list` from `.claude-plugin/plugin.json`.
-
-#### Formal Published / 正式发布
-
-- [qc-skills-setup](skills/published/qc-skills-setup/SKILL.md)
-- [qc-essence](skills/published/qc-essence/SKILL.md)
-- [qc-lean-html](skills/published/qc-lean-html/SKILL.md)
-- [qc-image-series](skills/published/qc-image-series/SKILL.md)
-
-这些原创 skills 已从 `skills/incubating/` 晋升到 `skills/published/`，并进入分发清单。
-
-#### Iteration Releases / 迭代版分发
-
-- [qc-think-alone](skills/incubating/qc-think-alone/SKILL.md)
-- [qc-investment-analysis](skills/incubating/qc-investment-analysis/SKILL.md)
-
-这些 skills 仍在 `skills/incubating/` 中迭代，但已进入分发清单。
+</details>
