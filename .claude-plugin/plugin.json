@@ -4,6 +4,8 @@
     "./skills/published/qc-skills-setup",
     "./skills/published/qc-essence",
     "./skills/published/qc-lean-html",
-    "./skills/published/qc-image-series"
+    "./skills/published/qc-image-series",
+    "./skills/incubating/qc-think-alone",
+    "./skills/incubating/qc-investment-analysis"
   ]
 }
