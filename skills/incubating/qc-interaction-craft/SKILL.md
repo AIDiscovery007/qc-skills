@@ -1,15 +1,15 @@
 ---
-name: qc-uiux-design
-description: Practices purpose-led UI/UX design engineering for polished product interfaces, including interaction intent, motion causality, component feel, frontend craft, and critique. Use when designing, building, or reviewing UI/UX, microinteractions, animation, transitions, gestures, motion polish, frontend component feel, or product interface quality. Do not use for backend-only work, static copywriting, brand identity, illustration prompts, or visual style feedback unless product interaction behavior is central.
+name: qc-interaction-craft
+description: Practices purpose-led interaction craft for polished product interfaces, including motion causality, component feel, frontend behavior, and critique. Use when designing, building, or reviewing UI/UX, microinteractions, animation, transitions, gestures, motion polish, frontend component feel, or product interface quality. Do not use for backend-only work, static copywriting, brand identity, illustration prompts, or visual style feedback unless product interaction behavior is central.
 ---
 
-# QC UI/UX Design
+# QC Interaction Craft
 
 Use this skill to make interfaces feel clear, fast, responsive, and intentional. Interaction design is work, art, and philosophy, but the operating mode is strict: every design move must have a named purpose, a causal map, exact vocabulary, safe defaults, and a validation pass.
 
 ## Essence
 
-Final judgment: UI/UX craft is purposeful causality made perceptible through product behavior.
+Final judgment: interaction craft is purposeful causality made perceptible through product behavior.
 
 **_A beautiful interface is not the one that moves more; it is the one whose every response makes the user's intention feel understood._**
 
