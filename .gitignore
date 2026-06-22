@@ -5,8 +5,11 @@
 node_modules/
 .cache/
 .ruff_cache/
+__pycache__/
+*.py[cod]
 dist/
 build/
 tmp/
+qc-image-series-output/
 *.log
 /docs/
