@@ -11,7 +11,7 @@ Cast one public figure as the sharpest thinking lens for the user's actual probl
 
 Use this skill when the user wants a person name that can unlock a useful knowledge system, thinking style, domain judgment, or practical problem-solving frame from the model. The core job is not to name a famous person; it is to infer the user's real problem structure and choose the public figure whose known methods best fit it.
 
-Treat the person as a public-work-informed lens, not as the real person, private consciousness, hidden parameters, or guaranteed faithful replica.
+Treat the person name as a compressed retrieval key. Use it to activate the model's public-work-informed knowledge of that person's methods, domains, standards, and reasoning patterns. Do not claim to be the real person, access private consciousness, hidden parameters, private beliefs, or guaranteed faithful replicas.
 
 ## Output Modes
 
@@ -53,7 +53,7 @@ Treat the person as a public-work-informed lens, not as the real person, private
 
 ## Artifact Rules
 
-Both artifact types should follow GPT-5.5-style prompt design: outcome-first, explicit constraints, clear evidence/uncertainty rules, and a concrete output shape. Avoid process-heavy prompt stacks unless the exact process is the product.
+Both artifact types should follow GPT-5.5-style prompt design: outcome-first, explicit constraints, clear evidence/uncertainty rules, and a concrete output shape. The artifact should use the person name strongly as an activation handle, while drawing a hard line between expert-lens simulation and real-person impersonation. Avoid process-heavy prompt stacks unless the exact process is the product.
 
 Do not add implementation notes outside the requested output shape. Use the user's language. In default prompt mode, output exactly:
 
