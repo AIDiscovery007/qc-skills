@@ -5,11 +5,11 @@ description: Recommends the single best public expert, thinker, operator, or cre
 
 # QC Expert Casting
 
-Cast one public figure as the sharpest thinking lens for the user's real problem.
+Cast one public figure as the sharpest thinking lens for the user's actual problem.
 
 ## Purpose
 
-Use this skill when the user wants a person name that can unlock a useful knowledge system, thinking style, domain judgment, or practical problem-solving frame from the model.
+Use this skill when the user wants a person name that can unlock a useful knowledge system, thinking style, domain judgment, or practical problem-solving frame from the model. The core job is not to name a famous person; it is to infer the user's real problem structure and choose the public figure whose known methods best fit it.
 
 Treat the person as a public-work-informed lens, not as the real person, private consciousness, hidden parameters, or guaranteed faithful replica.
 
@@ -17,18 +17,29 @@ Treat the person as a public-work-informed lens, not as the real person, private
 
 - Default mode: output one person, a brief recommendation reason, and a pasteable `Prompt 后缀`.
 - Sub Agent mode: when the user mentions Sub Agent, `agent.md`, system prompt, persona, or agent workflow, output one person, a brief recommendation reason, and a complete `Agent.md`.
-- In Sub Agent mode, read [references/agent-md.md](references/agent-md.md) before answering and use it as the artifact quality bar.
+- In default mode, read [references/prompt.md](references/prompt.md) before writing the suffix.
+- In Sub Agent mode, read [references/agent-md.md](references/agent-md.md) before writing the agent instruction.
 
-## Workflow
+## Casting Workflow
 
-1. Parse the user's actual problem, goal, stakes, constraints, and decision type.
-2. Extract the strongest domain keywords and the deeper capability needed: strategy, taste, systems thinking, science, investing, writing, product, operations, negotiation, leadership, or another concrete mode.
-3. Infer the missing expert pattern: who would naturally see the bottleneck, ask better questions, and produce a useful answer style for this situation?
-4. Generate 5-8 silent candidates from public figures, including both obvious domain authorities and cross-domain thinkers.
-5. Score candidates silently on fit, generativity, practical usefulness, distinctiveness, and risk of shallow imitation.
+1. Mine the user's input before thinking of names. Extract:
+   - surface keywords: explicit domain terms, objects, industries, tools, people, constraints
+   - action keywords: judge, design, sell, invest, negotiate, write, diagnose, decide, critique, build
+   - hidden bottleneck: uncertainty, taste, strategy, incentives, distribution, science, operations, psychology, capital, narrative, execution
+   - desired artifact: decision, plan, critique, framework, strategy, memo, prompt, `agent.md`, or other output
+   - stakes and audience: who will use the answer, how costly a wrong answer is, and what standard it must meet
+2. Compress those findings into a silent capability signature: `domain + task verb + bottleneck + success standard + needed thinking style`.
+3. Generate 5-8 silent candidates from public figures. Include obvious domain authorities and cross-domain thinkers only when their method, not their fame, matches the capability signature.
+4. Reject candidates whose fit is only topical. Prefer the person whose public work would change the questions asked, tradeoffs considered, or answer shape.
+5. Score silently on:
+   - problem-fit: matches the real bottleneck, not just surface keywords
+   - method depth: has identifiable public frameworks, methods, or standards
+   - generativity: can produce useful analysis across the user's whole situation
+   - actionability: can drive a decision, artifact, or next step
+   - distinctiveness: would produce a sharper lens than a generic expert
+   - imitation risk: low risk of biography filler, catchphrases, or shallow persona play
 6. Choose exactly one person. Do not hedge with a panel unless the user explicitly asks for multiple names.
-7. Choose the output mode from the user's request.
-8. Output the name, a short reason, and the selected artifact. Replace all template placeholders with concrete content.
+7. Choose output mode from the user's wording, load the matching reference, and output the selected artifact with all placeholders replaced by concrete content.
 
 ## Candidate Rules
 
@@ -36,22 +47,15 @@ Treat the person as a public-work-informed lens, not as the real person, private
 - Prefer the person whose methods match the problem, not the person whose domain label merely matches the topic.
 - If the problem needs practical execution, prefer operators and builders over commentators.
 - If the problem needs conceptual compression, prefer thinkers with strong frameworks.
-- If the problem is current, legal, medical, or financial, recommend a lens for reasoning only and avoid implying professional advice.
+- If the problem needs taste, craft, or positioning, prefer people with visible output standards, not only abstract theory.
+- If the problem is current, legal, medical, or financial, recommend a lens for reasoning only and avoid implying professional advice or current factual certainty.
 - Do not invent credentials, private beliefs, or unavailable works.
 
 ## Artifact Rules
 
-Both artifact types should extract the useful public reasoning style without pretending to be the person.
+Both artifact types should follow GPT-5.5-style prompt design: outcome-first, explicit constraints, clear evidence/uncertainty rules, and a concrete output shape. Avoid process-heavy prompt stacks unless the exact process is the product.
 
-For `Prompt 后缀`, create a concise suffix the user can paste after their own problem. It should name the selected person, the relevant knowledge domains, the thinking moves to apply, the expected output standard, and the non-impersonation guardrail.
-
-For `Agent.md`, create a reusable system-prompt-style instruction for a Sub Agent. It should be more operational than a suffix: mission, expert lens, operating principles, SOP, question policy, output contract, style, and guardrails. Use the reference file for the full structure.
-
-Keep either artifact directly pasteable. Do not add implementation notes outside the requested output shape.
-
-## Output Shape
-
-Use the user's language. In default prompt mode, output exactly:
+Do not add implementation notes outside the requested output shape. Use the user's language. In default prompt mode, output exactly:
 
 ```md
 人名：...
@@ -59,7 +63,7 @@ Use the user's language. In default prompt mode, output exactly:
 推荐理由：...
 
 Prompt 后缀：
-请基于 [把这里替换为所选人名] 的公开作品、公开观点、已知方法论和领域声誉，构建一个“专家思维镜头”来处理我的问题。不要扮演本人，不要编造私下观点或经历，不要输出传记介绍。请提取并运用他/她最有代表性的知识体系、判断框架、问题拆解方式、关键问题清单、取舍标准和表达风格。优先给出对当前问题最有用的分析、决策建议、反直觉洞察和可执行下一步；明确假设、约束和不确定性，避免空泛模仿和权威包装。
+...
 ```
 
 In Sub Agent mode, output these three outer sections, with complete generated `Agent.md` content under the final label:
@@ -81,4 +85,4 @@ Prompt mode: "我想判断一个 AI 产品创业方向有没有机会。" -> cho
 
 ## Final Check
 
-Before answering, ask silently: did I choose one person for the user's real bottleneck, explain why briefly, choose the right artifact mode, and provide pasteable instructions that extract useful public reasoning without impersonation?
+Before answering, ask silently: did I extract the real keywords and bottleneck from the user's input, choose one person whose public methods fit that capability signature, explain why briefly, load the right reference, and produce a pasteable artifact that is useful without impersonation?
