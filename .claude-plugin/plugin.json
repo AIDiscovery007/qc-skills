@@ -8,6 +8,7 @@
     "./skills/incubating/qc-think-alone",
     "./skills/incubating/qc-investment-analysis",
     "./skills/incubating/qc-expert-casting",
-    "./skills/incubating/qc-interaction-craft"
+    "./skills/incubating/qc-interaction-craft",
+    "./skills/incubating/qc-skill-tester"
   ]
 }
