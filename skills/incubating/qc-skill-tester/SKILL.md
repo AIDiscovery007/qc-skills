@@ -17,6 +17,8 @@ The staged procedure is runtime-neutral. Runtime-specific CLI commands live in s
 
 Read [references/procedure.md](references/procedure.md), then read the runtime reference for the selected agent. If the user does not specify a runtime, use [references/opencode-runtime.md](references/opencode-runtime.md).
 
+Preflight. Permissions: gather all permissions needed for child-agent CLI testing and request user approval once. If the current session already has all required permissions, proceed without asking again.
+0. Provider readiness: separate provider auth, membership, rate, TPM, and context-limit failures from skill-design failures.
 1. Registration: prove the selected agent runtime can discover the target skill.
 2. Stability: run the same prompt, same model, same agent environment in multiple isolated sessions.
 3. Compatibility: step down through lower-capability models across at least five different providers.
@@ -27,7 +29,7 @@ Read [references/procedure.md](references/procedure.md), then read the runtime r
 
 Write `tmp/skill-tests/<skill>-<timestamp>/report.md` and summarize the result to the user.
 
-The report matrix must be grouped by child runtime configuration, not by individual case. It must include each runtime's raw prompt, model, thinking level, agent environment, aggregate result, and evidence. Do not include exit code as a matrix field.
+The report matrix must be grouped by child runtime configuration, not by individual case. It must include the test stage type, concrete session id or ids for each runtime group, raw prompt, model, thinking level, agent environment, aggregate result, and evidence. Do not include exit code as a matrix field.
 
 ## Final Check
 
