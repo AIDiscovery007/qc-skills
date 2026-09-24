@@ -1,0 +1,384 @@
+{
+  "snapshot_date": "2026-09-24",
+  "path_base": "project root; optional historical evidence, not runtime dependencies",
+  "source_image": "hanfeng-influencer-06.jpg",
+  "manifest": "output/style-ab-test-20260923/refined-v2/manifest.json",
+  "manifest_sha256": "9a9933c253966dac923f283537158a0a427d9e95fd9967d041e3624e420737ff",
+  "styles": [
+    {
+      "style_code": 281,
+      "sample": "01",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/01/revised-prompt.txt",
+      "revised_prompt_sha256": "2b7573b07ce52481b57772f553ca4b06d1ca77e1b27b0a74c1bdf7b7f12bc7f4",
+      "characters": 1484,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/01/revised_prompt.submitted.txt",
+          "submitted_sha256": "daf91fe21bc335b9b73dc19ded0f6d7f0e048cc22b73f49a4874861efc81c23e",
+          "output": "output/style-ab-test-20260923/refined-v2/01/revised_prompt.png",
+          "output_sha256": "31176684e76b51caf3ee3e2fad280f465ae6741f513640075af904c01f88f702",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/01/revised_reference.submitted.txt",
+          "submitted_sha256": "624221cf29ed47e5d1876022f3a2471801de5646fa31618bd99697e3a1ab6837",
+          "output": "output/style-ab-test-20260923/refined-v2/01/revised_reference.png",
+          "output_sha256": "a55323ea4d0585b8300a522a16c7cd66a72ea3b87cee456b6fcff8c504bd22f2",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 416,
+      "sample": "02",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/02/revised-prompt.txt",
+      "revised_prompt_sha256": "ba6ca864a9345a4caf38d209d75e85b6a9c9b4f17f703fe987fefcdc69592257",
+      "characters": 1563,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/02/revised_prompt.submitted.txt",
+          "submitted_sha256": "d26506ed17ffee7ced0b4e4d67fc9a1f559afd1b51e547485f50d94585b0efd1",
+          "output": "output/style-ab-test-20260923/refined-v2/02/revised_prompt.png",
+          "output_sha256": "528ddcb3a4a4159bdaf1560ef14d1cdaafd908025a89a7dee23832f2ac063e56",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/02/revised_reference.submitted.txt",
+          "submitted_sha256": "06850c3cbffeceb5d4259f4d68119805d29de21290ac12496ec207101c6d1592",
+          "output": "output/style-ab-test-20260923/refined-v2/02/revised_reference.png",
+          "output_sha256": "a9d80881b2e7773eb534acdc56c6521283da695f6975cb009d63728ce5cc1905",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 415,
+      "sample": "03",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/03/revised-prompt.txt",
+      "revised_prompt_sha256": "6083cca3de2f0397bda30bc9895451aa6246037b8f31d1e4e71de3fbd14b3057",
+      "characters": 1979,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/03/revised_prompt.submitted.txt",
+          "submitted_sha256": "676b3306c6834c71e21b9d943dbc70dc727b8399bb5af37ebb6b4ab9167fbf5b",
+          "output": "output/style-ab-test-20260923/refined-v2/03/revised_prompt.png",
+          "output_sha256": "72e82ebb02a3db811208447367cad4427fe8dd4e68205eef7f3cd7293e3e47db",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/03/revised_reference.submitted.txt",
+          "submitted_sha256": "d5e64bd3956957b89d7f09d91daac81a2480dcd51db41832b1c4ddfa4199aece",
+          "output": "output/style-ab-test-20260923/refined-v2/03/revised_reference.png",
+          "output_sha256": "d5c3589370e61ec9aa51f484472b485f1b1dd6d7121dee3d27c8851b89700c3d",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 414,
+      "sample": "04",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/04/revised-prompt.txt",
+      "revised_prompt_sha256": "ef59935e746171d649679e0fbfe8a72e42d47685dce322491cc44a8c6a38bcdf",
+      "characters": 1791,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/04/revised_prompt.submitted.txt",
+          "submitted_sha256": "8ee0f660f92bc953c808d422b4361670e768d526242c99b54af464659397a9b4",
+          "output": "output/style-ab-test-20260923/refined-v2/04/revised_prompt.png",
+          "output_sha256": "cfeb8f553330865020be3257da07e4ff324974157f300e18070579914046e139",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/04/revised_reference.submitted.txt",
+          "submitted_sha256": "7f46714635174acc53944f8c3cadfd66d2c05203d6036f5d2a0f4ec3a5709726",
+          "output": "output/style-ab-test-20260923/refined-v2/04/revised_reference.png",
+          "output_sha256": "780f0da985386f8780fc5b0e52a5cedd245ad6164fbac597732d3abce6f67e60",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 413,
+      "sample": "05",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/05/revised-prompt.txt",
+      "revised_prompt_sha256": "b004a4199fb8250424accd63adf6eb82f2453a6405c72a54dd3921fe417f796e",
+      "characters": 1632,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/05/revised_prompt.submitted.txt",
+          "submitted_sha256": "05107fbb401e9c4091e8fea15067b07d790dd7c73779550b530e7aa3bc4b9110",
+          "output": "output/style-ab-test-20260923/refined-v2/05/revised_prompt.png",
+          "output_sha256": "d0740d15d9bbeb2488faa96ac14bd7236be47a8ed209a244ba5ed117c587595e",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/05/revised_reference.submitted.txt",
+          "submitted_sha256": "fffd17de885894e66871d729fc25fe1e3ea8ec4b88193d99fa1ac95ac1a62a81",
+          "output": "output/style-ab-test-20260923/refined-v2/05/revised_reference.png",
+          "output_sha256": "e1aa14105bfe95d06e217a090328c4fa5524170fb58e706c167268a5e545c46f",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 412,
+      "sample": "06",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/06/revised-prompt.txt",
+      "revised_prompt_sha256": "2646a43256d049f35a4a6d3b0a46ea03fd794124bb4a0a9869adc394d9f75a02",
+      "characters": 1789,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/06/revised_prompt.submitted.txt",
+          "submitted_sha256": "2c7b5900d5305f77048a3c4b1e5cdb39965013574af3856f4ea06a5e6eed4a75",
+          "output": "output/style-ab-test-20260923/refined-v2/06/revised_prompt.png",
+          "output_sha256": "91a5c9934de57b3b0837683b3a2b82dcf75f3dd4985e8db670347bcb5fd2a140",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/06/revised_reference.submitted.txt",
+          "submitted_sha256": "c991d77ac7ef36239a2df5b975d0c15f3f85feae0f92e211bacb9b27b468cb79",
+          "output": "output/style-ab-test-20260923/refined-v2/06/revised_reference.png",
+          "output_sha256": "d1221ca5c9b8d01061a3f93d08e80d58756aedf434d47f94096810229cd8dfc6",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 411,
+      "sample": "07",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/07/revised-prompt.txt",
+      "revised_prompt_sha256": "99fb5fc1220b1486efd7aff64e6b892bb6f95698b6413de1b07605ea789a16eb",
+      "characters": 1568,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/07/revised_prompt.submitted.txt",
+          "submitted_sha256": "63f56575f05e01785b772a83e276be4e0f06486c6787a068a7701915d0bfe733",
+          "output": "output/style-ab-test-20260923/refined-v2/07/revised_prompt.png",
+          "output_sha256": "593b6efb91adaf1c2dc029fc5e423532afb5cc4c2b5fdcfbd68d554f3973ff61",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/07/revised_reference.submitted.txt",
+          "submitted_sha256": "24b818965b782b10d9188cb9f313d0f6f6c0108de11375e3a4e7156c9beb542a",
+          "output": "output/style-ab-test-20260923/refined-v2/07/revised_reference.png",
+          "output_sha256": "bb8fb0dcedcfd7c1c7928aae9cfb36da7b6df53f6d6d963cf4d55f4e08c05e3c",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 410,
+      "sample": "08",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/08/revised-prompt.txt",
+      "revised_prompt_sha256": "6a1a99d4a840d62519a3ced9921284169004c3d6cd45821b31bce91ab9237c75",
+      "characters": 1874,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/08/revised_prompt.submitted.txt",
+          "submitted_sha256": "569bf7228bca586a48e24ff4d44c44e4cf28b3953084c8adb0de2537248b5561",
+          "output": "output/style-ab-test-20260923/refined-v2/08/revised_prompt.png",
+          "output_sha256": "8d3bae79c99e20bff5dc6d783d2c0c5e9f0e5f871af15fec6007502e8a17cb7b",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/08/revised_reference.submitted.txt",
+          "submitted_sha256": "e83782931d0f8e99ca3ca7d1d2a7f875d53201643bc624443b882e38123765fa",
+          "output": "output/style-ab-test-20260923/refined-v2/08/revised_reference.png",
+          "output_sha256": "1fe277ade257f60f768deb7b8670aa100e5e6916bd63010e3c2fd2b885a1835d",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 409,
+      "sample": "09",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/09/revised-prompt.txt",
+      "revised_prompt_sha256": "bcc0e7ee9021af4c53e8ce0b923de3446f57ec4ddb619387983ebc652fd7346f",
+      "characters": 1891,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/09/revised_prompt.submitted.txt",
+          "submitted_sha256": "d45690b4a373dc48596b43f848a1a57837e5aae0b2e09736ad66ba2f80df3f20",
+          "output": "output/style-ab-test-20260923/refined-v2/09/revised_prompt.png",
+          "output_sha256": "728f9ac4bbcd70e2c560f752e57fd791c0f9045a8603731b9c8f8975af7d46e0",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/09/revised_reference.submitted.txt",
+          "submitted_sha256": "2b2157658ae46f1cbc6ba4d6d98b02bef5256548bd5314f466935b50f813d03c",
+          "output": "output/style-ab-test-20260923/refined-v2/09/revised_reference.png",
+          "output_sha256": "e32d24b0a76fa954284e18abd8dc70a6839411a878e0951c6e9ec0daa2cb109f",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 408,
+      "sample": "10",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/10/revised-prompt.txt",
+      "revised_prompt_sha256": "25f29b7a27a747d281ee88e4073c5db184b77df440a390cf430c4b2377118254",
+      "characters": 1560,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/10/revised_prompt.submitted.txt",
+          "submitted_sha256": "2ab2147a29080db5f47c2840c8603a0f380a90021eec612ec003e50eab33add0",
+          "output": "output/style-ab-test-20260923/refined-v2/10/revised_prompt.png",
+          "output_sha256": "59ad4165185c10d26e7c4bb7e73a7fd2487d247956286443cfb98eff9bccac70",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/10/revised_reference.submitted.txt",
+          "submitted_sha256": "d2deae12d00b198aadb61c253165d6b5bce7cc60d7a0021c43e0084c47e037a6",
+          "output": "output/style-ab-test-20260923/refined-v2/10/revised_reference.png",
+          "output_sha256": "629fff3b7bec9ed6cb87a62974a57b55c2921f0a545a92c21b57845081cf6043",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 381,
+      "sample": "11",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/11/revised-prompt.txt",
+      "revised_prompt_sha256": "c1bb2f0baa3aa4c32e5ef40980ecf9298e1297d0f6735e19a3ce993f8a4b6bf8",
+      "characters": 1779,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/11/revised_prompt.submitted.txt",
+          "submitted_sha256": "ff76006a589c49a090dd833abbf1f1d43740ec2c3d98564507166c0b649a6d74",
+          "output": "output/style-ab-test-20260923/refined-v2/11/revised_prompt.png",
+          "output_sha256": "f7d8523e583c8c6a8b15e3c5a17030be5c51b66cbdd6abdf915276843e5f7df9",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/11/revised_reference.submitted.txt",
+          "submitted_sha256": "5a4d601b198d725c7ccf69649e393a825cf9d2f3da49a86475496818165c9fbe",
+          "output": "output/style-ab-test-20260923/refined-v2/11/revised_reference.png",
+          "output_sha256": "3ee54aba0daa80d4cc47e47188ebba8c51b8814712630a9c3bccef1b0e4efa8c",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 396,
+      "sample": "12",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/12/revised-prompt.txt",
+      "revised_prompt_sha256": "055ecfe420d306c53929d205aa85db5f1a5f873af947f8b95309107464cddf6f",
+      "characters": 1627,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/12/revised_prompt.submitted.txt",
+          "submitted_sha256": "73144e410286250a9062af4d3930e029abaece8d87e6a43c018559d01e41271e",
+          "output": "output/style-ab-test-20260923/refined-v2/12/revised_prompt.png",
+          "output_sha256": "cf1a50f28f8ce2eb16ee9d7cab70fbfe438d8a24a864a4db3ce602f7cfed3647",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/12/revised_reference.submitted.txt",
+          "submitted_sha256": "6849175004237f36d138ed2a5d11f6b475f2dfecebc192732c5daa6426763ac8",
+          "output": "output/style-ab-test-20260923/refined-v2/12/revised_reference.png",
+          "output_sha256": "25baebf2fb59d4ff247a5cdda99fcc4b4057c2289d225def0700e93f03307fc2",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 402,
+      "sample": "13",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/13/revised-prompt.txt",
+      "revised_prompt_sha256": "5435dca6d2c2d524a19e96749abccb4ebe702ae8b6447b4349b8a06f5dc3a227",
+      "characters": 1969,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/13/revised_prompt.submitted.txt",
+          "submitted_sha256": "da4223f6d61c72fcadfbdaea3e1af38a13b8f57853050f340afd90a461f3b757",
+          "output": "output/style-ab-test-20260923/refined-v2/13/revised_prompt.png",
+          "output_sha256": "f3656a14bb0ed9439b1965b1a596854c4a0c721d969ed2b4297ca426559cc158",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/13/revised_reference.submitted.txt",
+          "submitted_sha256": "c3b2af0dba21e6617c5d5f4e00206384950f32c0eb738fcc841a057680ef918c",
+          "output": "output/style-ab-test-20260923/refined-v2/13/revised_reference.png",
+          "output_sha256": "4feb6b67f1428f1c16190c908babe781044a92f2f5f675c8d676ea0cb2008085",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 404,
+      "sample": "14",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/14/revised-prompt-v3.txt",
+      "revised_prompt_sha256": "10bb97218b0de6bcf1070a85d530e6b55c4484ba359d24dfcfeafe8f5d7eb1b9",
+      "characters": 2183,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/14/revised_prompt.v3.submitted.txt",
+          "submitted_sha256": "517f35690a01eb1d7d18f605b5f70d7f8d9ae1c5cd0b04cb81791c2c976e71c0",
+          "output": "output/style-ab-test-20260923/refined-v2/14/revised_prompt.v3.png",
+          "output_sha256": "c5b6501cf78e341b8eecde5f5c8b603efa793b1ad88eb432f3c363a6d71f0c5a",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/14/revised_reference.v3.submitted.txt",
+          "submitted_sha256": "33081b5e7d759944065205fe084a27c3e69da792500c2e01ad03e4062e25e96f",
+          "output": "output/style-ab-test-20260923/refined-v2/14/revised_reference.v3.png",
+          "output_sha256": "71a5a3e04f22d102ee78e52599bc26adfca16374afbdf8796431dfcca9e6186d",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "style_code": 407,
+      "sample": "15",
+      "revised_prompt": "output/style-ab-test-20260923/refined-v2/15/revised-prompt.txt",
+      "revised_prompt_sha256": "83217100cfa151c221bfb00cc8d91eba3e9548a5555c2ae5cfeeff46dd7c5a81",
+      "characters": 1549,
+      "conditions": [
+        {
+          "variant": "revised_prompt",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/15/revised_prompt.submitted.txt",
+          "submitted_sha256": "9f88cfb3313cfbafe7db12c7025934fa5813d357fc6bce904f118428fb3455dd",
+          "output": "output/style-ab-test-20260923/refined-v2/15/revised_prompt.png",
+          "output_sha256": "871b3bae27113a6b5a29f0f53df62a9f6ec497ff3a85531d05f3b4e50c80c910",
+          "status": "complete"
+        },
+        {
+          "variant": "revised_reference",
+          "submitted_prompt": "output/style-ab-test-20260923/refined-v2/15/revised_reference.submitted.txt",
+          "submitted_sha256": "4ab22f55f352a925dd9cbe8ed9b5f59044e697ffad37844ab5e669385aaaaea2",
+          "output": "output/style-ab-test-20260923/refined-v2/15/revised_reference.png",
+          "output_sha256": "bddb6789cb9705c665409207378fc0475060ca4c1b5077ddb1f9ab8d55d7e21f",
+          "status": "complete"
+        }
+      ]
+    }
+  ]
+}

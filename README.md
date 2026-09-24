@@ -42,6 +42,7 @@ These are the skills exposed through `.claude-plugin/plugin.json`.
 - [qc-expert-casting](skills/incubating/qc-expert-casting/SKILL.md) - cast one public expert lens for a problem and generate a prompt suffix or Sub Agent `agent.md`.
 - [qc-interaction-craft](skills/incubating/qc-interaction-craft/SKILL.md) - design, implement, review, and debug purpose-led product interaction behavior and motion craft.
 - [qc-skill-tester](skills/incubating/qc-skill-tester/SKILL.md) - test skills through isolated child-agent CLI runs and session analysis.
+- [qc-alchemy](skills/incubating/qc-alchemy/SKILL.md) - reverse-engineer reference images into recreation prompts and transferable visual styles.
 
 ## Repo Map / 仓库结构
 

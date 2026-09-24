@@ -1,0 +1,4 @@
+interface:
+  display_name: "QC Alchemy"
+  short_description: "从不同题材参考图逆向提示词，提取可迁移风格并适配目标主体或构图"
+  default_prompt: "使用 $qc-alchemy 分析这张风格参考图，逆向出可执行的复刻提示词，并按我的目标内容适配。"
