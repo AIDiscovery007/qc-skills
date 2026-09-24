@@ -5,11 +5,7 @@
     "./skills/published/qc-essence",
     "./skills/published/qc-lean-html",
     "./skills/published/qc-image-series",
-    "./skills/incubating/qc-think-alone",
-    "./skills/incubating/qc-investment-analysis",
-    "./skills/incubating/qc-expert-casting",
-    "./skills/incubating/qc-interaction-craft",
-    "./skills/incubating/qc-skill-tester",
-    "./skills/incubating/qc-alchemy"
+    "./skills/published/qc-alchemy",
+    "./skills/incubating/qc-expert-casting"
   ]
 }

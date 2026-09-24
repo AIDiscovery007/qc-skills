@@ -34,15 +34,11 @@ These are the skills exposed through `.claude-plugin/plugin.json`.
 - [qc-essence](skills/published/qc-essence/SKILL.md) - compress a topic, article, plan, or problem to its decisive essence.
 - [qc-lean-html](skills/published/qc-lean-html/SKILL.md) - render dense content into a compact, self-contained HTML report.
 - [qc-image-series](skills/published/qc-image-series/SKILL.md) - create consistent prompt specs for covers, carousels, and image series.
+- [qc-alchemy](skills/published/qc-alchemy/SKILL.md) - reverse-engineer reference images into recreation prompts and transferable visual styles.
 
 ### Incubating / 迭代中
 
-- [qc-think-alone](skills/incubating/qc-think-alone/SKILL.md) - apply a task-first independent thinking posture without forcing an output format.
-- [qc-investment-analysis](skills/incubating/qc-investment-analysis/SKILL.md) - analyze markets through dominant constraints, transmission, and portfolio expression.
 - [qc-expert-casting](skills/incubating/qc-expert-casting/SKILL.md) - cast one public expert lens for a problem and generate a prompt suffix or Sub Agent `agent.md`.
-- [qc-interaction-craft](skills/incubating/qc-interaction-craft/SKILL.md) - design, implement, review, and debug purpose-led product interaction behavior and motion craft.
-- [qc-skill-tester](skills/incubating/qc-skill-tester/SKILL.md) - test skills through isolated child-agent CLI runs and session analysis.
-- [qc-alchemy](skills/incubating/qc-alchemy/SKILL.md) - reverse-engineer reference images into recreation prompts and transferable visual styles.
 
 ## Repo Map / 仓库结构
 
