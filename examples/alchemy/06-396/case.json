@@ -1,0 +1,44 @@
+{
+  "rank": 6,
+  "style_code": 396,
+  "title": "Citrus Print",
+  "title_zh": "柑橘版画",
+  "mode": "模板重演 / 主体适配",
+  "highlight": "单颗橙子转为粗颗粒、有限套色与嵌字的食品海报。",
+  "iteration": "jobs记录attempt=1。",
+  "limitations": "主动重复重排橙子并添加授权的ORANGE/CITRUS/SWEET文字。",
+  "files": {
+    "source": {
+      "path": "06-396/source.jpg",
+      "sha256": "d5796ac3ed83155cb0a3cc9ea852b1ec1ced5edebc50311e85890e1b4f0fe5db",
+      "source_project_path": "output/restyle-24/sources/generic-orange-c.jpg"
+    },
+    "reference": {
+      "path": "06-396/reference.webp",
+      "sha256": "c790803224d1a98e959e1a8b9f8b2937c1d84d8130b02235a162beb446fc4893",
+      "source_project_path": "images/6a2a85d80000000035020c07_02.webp"
+    },
+    "result": {
+      "path": "06-396/result.png",
+      "sha256": "925fa34a931232ba80aaa92b2cd9224f74f2c9273567a32c031d8deb8a617eac",
+      "source_project_path": "output/restyle-24/results/396.png"
+    },
+    "prompt": {
+      "path": "06-396/prompt.txt",
+      "sha256": "7d4fd022a14c28a537fd3db7815417f315cd1ef77c8e56430fa9dd256d152b42",
+      "source_project_path": "output/restyle-24/submitted-prompts/396.txt"
+    }
+  },
+  "steps": [
+    {
+      "action": "generate",
+      "input_order": [
+        "06-396/source.jpg",
+        "06-396/reference.webp"
+      ],
+      "prompt": "06-396/prompt.txt",
+      "output": "06-396/result.png"
+    }
+  ],
+  "record_source_project_path": "output/restyle-24/jobs.json"
+}

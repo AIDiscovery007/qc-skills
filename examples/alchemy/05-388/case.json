@@ -1,0 +1,44 @@
+{
+  "rank": 5,
+  "style_code": 388,
+  "title": "Cobalt Visor",
+  "title_zh": "钴蓝光镜",
+  "mode": "模板重演 / 主体适配",
+  "highlight": "从犬类模板提取配色、透明镜片与立领，转译为女性未来肖像。",
+  "iteration": "案例记录没有后续修正字段。",
+  "limitations": "人脸比参考犬模板更写实；跨物种适配有意改变形体。",
+  "files": {
+    "source": {
+      "path": "05-388/source.jpg",
+      "sha256": "8b82ad3e34bf51af1c8e5a35286f50c89b0b5830c681947492a5c3036e280870",
+      "source_project_path": "output/风格重演15种-离线分享/assets/originals/portrait.jpg"
+    },
+    "reference": {
+      "path": "05-388/reference.webp",
+      "sha256": "1ffcf6f49fe9ac1886abf5f444df952eb00307b1dfe429a766411de5086823f2",
+      "source_project_path": "output/风格重演15种-离线分享/assets/references/388.webp"
+    },
+    "result": {
+      "path": "05-388/result.png",
+      "sha256": "97b2266e3e4ef75f082f7dc31bf9f8ab7c7779717e4d2526d10f8f3ff303d81c",
+      "source_project_path": "output/风格重演15种-离线分享/assets/results/388.png"
+    },
+    "prompt": {
+      "path": "05-388/prompt.txt",
+      "sha256": "1590d977f2f7afa01881a384325c7306eb19f22c4df1e313b94c8fc081e9a8b9",
+      "source_project_path": "output/风格重演15种-离线分享/prompts/388-generation.txt"
+    }
+  },
+  "steps": [
+    {
+      "action": "generate",
+      "input_order": [
+        "05-388/source.jpg",
+        "05-388/reference.webp"
+      ],
+      "prompt": "05-388/prompt.txt",
+      "output": "05-388/result.png"
+    }
+  ],
+  "record_source_project_path": "output/style-gallery-15/style-388.json"
+}

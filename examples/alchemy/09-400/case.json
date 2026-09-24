@@ -1,0 +1,44 @@
+{
+  "rank": 9,
+  "style_code": 400,
+  "title": "Crayon Companion",
+  "title_zh": "蜡笔伙伴",
+  "mode": "保留结构换画法",
+  "highlight": "保留狗与居家环境，用全画面蜡笔短触和纸齿将照片转为绘画。",
+  "iteration": "结构保留批次单独生成；无后续编辑记录。",
+  "limitations": "整体布局保留但小物细节与线条简化，不能宣称逐物像素级不变。",
+  "files": {
+    "source": {
+      "path": "09-400/source.jpg",
+      "sha256": "c1c0dd018fe00583cc011903687392295b7d212f08cbc80cd6819ae1c17824f1",
+      "source_project_path": "output/restyle-24/sources/objects-dog-daisy.jpg"
+    },
+    "reference": {
+      "path": "09-400/reference.webp",
+      "sha256": "92ddb8690daa66ef466cf8c2a08831ab65e024afc278c8fb095bf9805d2b0efe",
+      "source_project_path": "images/6a4253db000000001100483c_02.webp"
+    },
+    "result": {
+      "path": "09-400/result.png",
+      "sha256": "44c9617514f104795cc1b18de54b3a49cdd9c65aa24ce0844e0005d4e56b365c",
+      "source_project_path": "output/restyle-24-structure/results/400.png"
+    },
+    "prompt": {
+      "path": "09-400/prompt.txt",
+      "sha256": "22957141e69ecec307075a06c9c77a67af19b4b7cbcd8e20cad8daee92d4fb22",
+      "source_project_path": "output/restyle-24-structure/prompts/400.txt"
+    }
+  },
+  "steps": [
+    {
+      "action": "generate",
+      "input_order": [
+        "09-400/source.jpg",
+        "09-400/reference.webp"
+      ],
+      "prompt": "09-400/prompt.txt",
+      "output": "09-400/result.png"
+    }
+  ],
+  "record_source_project_path": "output/restyle-24-structure/manifest.json"
+}

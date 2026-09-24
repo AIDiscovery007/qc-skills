@@ -1,0 +1,44 @@
+{
+  "rank": 7,
+  "style_code": 402,
+  "title": "Emerald Veil",
+  "title_zh": "翡翠红纱",
+  "mode": "模板重演 / 主体适配",
+  "highlight": "自然肤色肖像转为绿肤侧脸、透明红纱与深绿服饰。",
+  "iteration": "第3版，前两版后调整整体侧姿与取色；最终由原图＋模板重新生成。",
+  "limitations": "绿色仍比模板偏黄、饱和度略低，未完全复刻参考肤色。",
+  "files": {
+    "source": {
+      "path": "07-402/source.jpg",
+      "sha256": "22d69ca6c1678d8017ed35ce9e7f412f6b60105f909d86ca9995908bb848409c",
+      "source_project_path": "output/restyle-24/sources/portrait-main.jpg"
+    },
+    "reference": {
+      "path": "07-402/reference.webp",
+      "sha256": "ae61db20f4b90ae995b55ce330fed51f1f065ef8b5112f076db6056687dab0a0",
+      "source_project_path": "images/6a4df1ea000000000f02bc3b_02.webp"
+    },
+    "result": {
+      "path": "07-402/result.png",
+      "sha256": "b5fdeea44338f19cf28b76f384f869d6e87f492b0052ac39e7f44c41958dfc99",
+      "source_project_path": "output/restyle-24/results/402-v3-color.png"
+    },
+    "prompt": {
+      "path": "07-402/prompt.txt",
+      "sha256": "776b7b549c75a74af0bb03663b1fc71652b2506b9d8123bf84b0924857c0228d",
+      "source_project_path": "output/restyle-24/submitted-prompts/402-v3-color.txt"
+    }
+  },
+  "steps": [
+    {
+      "action": "generate",
+      "input_order": [
+        "07-402/source.jpg",
+        "07-402/reference.webp"
+      ],
+      "prompt": "07-402/prompt.txt",
+      "output": "07-402/result.png"
+    }
+  ],
+  "record_source_project_path": "output/restyle-24/jobs.json"
+}

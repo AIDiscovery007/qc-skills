@@ -1,0 +1,44 @@
+{
+  "rank": 10,
+  "style_code": 393,
+  "title": "Pearlescent Bloom",
+  "title_zh": "珠光花冠",
+  "mode": "模板重演 / 主体适配",
+  "highlight": "粉蓝高明度、花瓣遮挡与珍珠宝石将普通人像改写为甜美幻想插画。",
+  "iteration": "案例记录没有后续修正字段。",
+  "limitations": "五官和头发比模板更细腻，卡通概括程度稍弱；面部部分遮挡。",
+  "files": {
+    "source": {
+      "path": "10-393/source.jpg",
+      "sha256": "8b82ad3e34bf51af1c8e5a35286f50c89b0b5830c681947492a5c3036e280870",
+      "source_project_path": "output/风格重演15种-离线分享/assets/originals/portrait.jpg"
+    },
+    "reference": {
+      "path": "10-393/reference.webp",
+      "sha256": "3d810fd6994ad0990cc91dc9f1fd083f66045ac8de90051dd81937f01104f3de",
+      "source_project_path": "output/风格重演15种-离线分享/assets/references/393.webp"
+    },
+    "result": {
+      "path": "10-393/result.png",
+      "sha256": "412e7437adc515a00b48903fbe5b364c70dca6ed3ba49d9287740186acdb3a66",
+      "source_project_path": "output/风格重演15种-离线分享/assets/results/393.png"
+    },
+    "prompt": {
+      "path": "10-393/prompt.txt",
+      "sha256": "22ad17b41d55b29af4939e8c88e35bd8e7f99e070a47977709e0974f3888328c",
+      "source_project_path": "output/风格重演15种-离线分享/prompts/393-generation.txt"
+    }
+  },
+  "steps": [
+    {
+      "action": "generate",
+      "input_order": [
+        "10-393/source.jpg",
+        "10-393/reference.webp"
+      ],
+      "prompt": "10-393/prompt.txt",
+      "output": "10-393/result.png"
+    }
+  ],
+  "record_source_project_path": "output/style-gallery-15/style-393.json"
+}

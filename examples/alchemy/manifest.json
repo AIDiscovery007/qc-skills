@@ -1,0 +1,463 @@
+{
+  "title": "Alchemy: 10 selected transformations",
+  "scope": "Selected historical outputs; not a single-run benchmark. Images copied byte-for-byte; no generation or retouching during packaging.",
+  "cases": [
+    {
+      "rank": 1,
+      "style_code": 395,
+      "title": "Dreamlight",
+      "title_zh": "梦幻星芒",
+      "mode": "模板重演 / 主体适配",
+      "highlight": "黑色剪影、粉红点阵眼镜与星芒把日常肖像重演为梦幻未来主义。",
+      "iteration": "本次文件记录为原图＋模板生成；项目中存在较早395迭代，不能当作全项目首次尝试。",
+      "limitations": "面部按设计藏于阴影，不能据此验证精确五官身份；手部叠放可读。",
+      "files": {
+        "source": {
+          "path": "01-395/source.jpg",
+          "sha256": "8b82ad3e34bf51af1c8e5a35286f50c89b0b5830c681947492a5c3036e280870",
+          "source_project_path": "hanfeng-influencer-06.jpg"
+        },
+        "reference": {
+          "path": "01-395/reference.webp",
+          "sha256": "1d018679cef8b6b2e9ff5c08cd18cce2e881035e4706a3d54a36417add05ef12",
+          "source_project_path": "images/6a265475000000003502728b_02.webp"
+        },
+        "result": {
+          "path": "01-395/result.png",
+          "sha256": "68f3549ab773eec59e42f7fbbd94f020ff6c9a5532495aa06a84a0cef4e566e8",
+          "source_project_path": "output/imagegen/hanfeng-06-style395-20260924.png"
+        },
+        "prompt": {
+          "path": "01-395/prompt.txt",
+          "sha256": "f5d47b9211ef95ee5e8abac85678ba4e998b9ce1774d21cd4bb2e5c7bf5dd0ad",
+          "source_project_path": "output/imagegen/hanfeng-06-style395-20260924-prompt.txt"
+        }
+      },
+      "steps": [
+        {
+          "action": "generate",
+          "input_order": [
+            "01-395/source.jpg",
+            "01-395/reference.webp"
+          ],
+          "prompt": "01-395/prompt.txt",
+          "output": "01-395/result.png"
+        }
+      ],
+      "record_source_project_path": "output/imagegen/hanfeng-06-style394-395-20260924-manifest.json"
+    },
+    {
+      "rank": 2,
+      "style_code": 394,
+      "title": "Gilded Tide",
+      "title_zh": "青蓝金纹",
+      "mode": "模板重演 / 主体适配",
+      "highlight": "青蓝漫画、金色纹样和环绕云浪形成高度鲜明的视觉重构。",
+      "iteration": "一次主体生成后有一次仅清理右下角角标的编辑；两步prompt均须保留。",
+      "limitations": "输出五官比模板更精细；最终版本已局部清除复制的角标。",
+      "files": {
+        "source": {
+          "path": "02-394/source.jpg",
+          "sha256": "8b82ad3e34bf51af1c8e5a35286f50c89b0b5830c681947492a5c3036e280870",
+          "source_project_path": "hanfeng-influencer-06.jpg"
+        },
+        "reference": {
+          "path": "02-394/reference.webp",
+          "sha256": "662bbc623cfd73f1d592d5a14396c9aee8dfc72c1ce69f3e865f9faac3febc9f",
+          "source_project_path": "images/6a1fee48000000002202afed_02.webp"
+        },
+        "result": {
+          "path": "02-394/result.png",
+          "sha256": "1c7cd53113e264088edccf80961a0f29cf8ecc243654a37f120d502494c065b6",
+          "source_project_path": "output/imagegen/hanfeng-06-style394-20260924.png"
+        },
+        "prompt": {
+          "path": "02-394/prompt.txt",
+          "sha256": "53ebf5f5f33c7715e03fa0760748b72728f0ef92ea06e6d306acac52d740427f",
+          "source_project_path": "output/imagegen/hanfeng-06-style394-20260924-prompt.txt"
+        },
+        "before_cleanup": {
+          "path": "02-394/before-cleanup.png",
+          "sha256": "647fd4a5ae2934ffb749d5a4b63f90898a89973a447ccd0d2d20847b5c5db470"
+        },
+        "cleanup_prompt": {
+          "path": "02-394/cleanup-prompt.txt",
+          "sha256": "56e5bf3f8af71fd623b968a92fcef96d54bc79a161687f9df2da7c655a6ac925"
+        }
+      },
+      "steps": [
+        {
+          "action": "generate",
+          "input_order": [
+            "02-394/source.jpg",
+            "02-394/reference.webp"
+          ],
+          "prompt": "02-394/prompt.txt",
+          "output": "02-394/before-cleanup.png"
+        },
+        {
+          "action": "edit",
+          "input_order": [
+            "02-394/before-cleanup.png"
+          ],
+          "prompt": "02-394/cleanup-prompt.txt",
+          "output": "02-394/result.png",
+          "reason": "Remove tiny bottom-right corner watermark copied from reference"
+        }
+      ],
+      "record_source_project_path": "output/imagegen/hanfeng-06-style394-395-20260924-manifest.json"
+    },
+    {
+      "rank": 3,
+      "style_code": 405,
+      "title": "Jellyfish Nocturne",
+      "title_zh": "水母夜城",
+      "mode": "模板重演 / 主体适配",
+      "highlight": "同一街区变成暖金灯阵与发光水母交织的奇幻水域。",
+      "iteration": "记录为该组首轮；无后续修正记录。",
+      "limitations": "重建道路为水面并增加奇幻元素，属于模板重演，不是严格保留结构。",
+      "files": {
+        "source": {
+          "path": "03-405/source.jpg",
+          "sha256": "d8f8fd02e385895d2db94f7b0d25ededcd49b6d87447cd6ed6330eade96373a4",
+          "source_project_path": "output/restyle-24/sources/generic-street-madrid.jpg"
+        },
+        "reference": {
+          "path": "03-405/reference.webp",
+          "sha256": "9ba57bf4f5b275a441e9a116f6faae9b4bef30f5bde6396f83b5e394de300e76",
+          "source_project_path": "images/6a5727cb000000001101f687_02.webp"
+        },
+        "result": {
+          "path": "03-405/result.png",
+          "sha256": "870f91da027533dbfeb1c9e490a1eee9572fd0c0dd5e873703e51778acbce9b4",
+          "source_project_path": "output/restyle-24/results/405.png"
+        },
+        "prompt": {
+          "path": "03-405/prompt.txt",
+          "sha256": "56f9069825dade45b424c07f1f90c9c545d617ea594674106244e2ab952c69d4",
+          "source_project_path": "output/restyle-24/submitted-prompts/405.txt"
+        }
+      },
+      "steps": [
+        {
+          "action": "generate",
+          "input_order": [
+            "03-405/source.jpg",
+            "03-405/reference.webp"
+          ],
+          "prompt": "03-405/prompt.txt",
+          "output": "03-405/result.png"
+        }
+      ],
+      "record_source_project_path": "output/restyle-24/jobs.json"
+    },
+    {
+      "rank": 4,
+      "style_code": 273,
+      "title": "Floating City",
+      "title_zh": "悬浮城市",
+      "mode": "模板重演 / 主体适配",
+      "highlight": "原建筑轮廓转成精细透明水层与悬浮地下剖面，跨场景效果强。",
+      "iteration": "记录为该组生成版本；无后续修正记录。",
+      "limitations": "地下结构及细小标注是艺术想象，不是可用工程图。",
+      "files": {
+        "source": {
+          "path": "04-273/source.jpg",
+          "sha256": "d8f8fd02e385895d2db94f7b0d25ededcd49b6d87447cd6ed6330eade96373a4",
+          "source_project_path": "output/restyle-24/sources/generic-street-madrid.jpg"
+        },
+        "reference": {
+          "path": "04-273/reference.webp",
+          "sha256": "8246319940b6b5e99ffaabd1106bfca0d91c022aa24868404769322b6afbaa82",
+          "source_project_path": "images/687a5728000000000d01b672_02.webp"
+        },
+        "result": {
+          "path": "04-273/result.png",
+          "sha256": "194ebee60c4f044a833b03f9f9c9df948917c2e98e166f0cdcca5d6142d09eef",
+          "source_project_path": "output/restyle-24/results/273.png"
+        },
+        "prompt": {
+          "path": "04-273/prompt.txt",
+          "sha256": "8dc6bdb60a0113de7ec45d19d4a4adb35f95052e5aef69bf27abbef27275a2b5",
+          "source_project_path": "output/restyle-24/submitted-prompts/273.txt"
+        }
+      },
+      "steps": [
+        {
+          "action": "generate",
+          "input_order": [
+            "04-273/source.jpg",
+            "04-273/reference.webp"
+          ],
+          "prompt": "04-273/prompt.txt",
+          "output": "04-273/result.png"
+        }
+      ],
+      "record_source_project_path": "output/restyle-24/jobs.json"
+    },
+    {
+      "rank": 5,
+      "style_code": 388,
+      "title": "Cobalt Visor",
+      "title_zh": "钴蓝光镜",
+      "mode": "模板重演 / 主体适配",
+      "highlight": "从犬类模板提取配色、透明镜片与立领，转译为女性未来肖像。",
+      "iteration": "案例记录没有后续修正字段。",
+      "limitations": "人脸比参考犬模板更写实；跨物种适配有意改变形体。",
+      "files": {
+        "source": {
+          "path": "05-388/source.jpg",
+          "sha256": "8b82ad3e34bf51af1c8e5a35286f50c89b0b5830c681947492a5c3036e280870",
+          "source_project_path": "output/风格重演15种-离线分享/assets/originals/portrait.jpg"
+        },
+        "reference": {
+          "path": "05-388/reference.webp",
+          "sha256": "1ffcf6f49fe9ac1886abf5f444df952eb00307b1dfe429a766411de5086823f2",
+          "source_project_path": "output/风格重演15种-离线分享/assets/references/388.webp"
+        },
+        "result": {
+          "path": "05-388/result.png",
+          "sha256": "97b2266e3e4ef75f082f7dc31bf9f8ab7c7779717e4d2526d10f8f3ff303d81c",
+          "source_project_path": "output/风格重演15种-离线分享/assets/results/388.png"
+        },
+        "prompt": {
+          "path": "05-388/prompt.txt",
+          "sha256": "1590d977f2f7afa01881a384325c7306eb19f22c4df1e313b94c8fc081e9a8b9",
+          "source_project_path": "output/风格重演15种-离线分享/prompts/388-generation.txt"
+        }
+      },
+      "steps": [
+        {
+          "action": "generate",
+          "input_order": [
+            "05-388/source.jpg",
+            "05-388/reference.webp"
+          ],
+          "prompt": "05-388/prompt.txt",
+          "output": "05-388/result.png"
+        }
+      ],
+      "record_source_project_path": "output/style-gallery-15/style-388.json"
+    },
+    {
+      "rank": 6,
+      "style_code": 396,
+      "title": "Citrus Print",
+      "title_zh": "柑橘版画",
+      "mode": "模板重演 / 主体适配",
+      "highlight": "单颗橙子转为粗颗粒、有限套色与嵌字的食品海报。",
+      "iteration": "jobs记录attempt=1。",
+      "limitations": "主动重复重排橙子并添加授权的ORANGE/CITRUS/SWEET文字。",
+      "files": {
+        "source": {
+          "path": "06-396/source.jpg",
+          "sha256": "d5796ac3ed83155cb0a3cc9ea852b1ec1ced5edebc50311e85890e1b4f0fe5db",
+          "source_project_path": "output/restyle-24/sources/generic-orange-c.jpg"
+        },
+        "reference": {
+          "path": "06-396/reference.webp",
+          "sha256": "c790803224d1a98e959e1a8b9f8b2937c1d84d8130b02235a162beb446fc4893",
+          "source_project_path": "images/6a2a85d80000000035020c07_02.webp"
+        },
+        "result": {
+          "path": "06-396/result.png",
+          "sha256": "925fa34a931232ba80aaa92b2cd9224f74f2c9273567a32c031d8deb8a617eac",
+          "source_project_path": "output/restyle-24/results/396.png"
+        },
+        "prompt": {
+          "path": "06-396/prompt.txt",
+          "sha256": "7d4fd022a14c28a537fd3db7815417f315cd1ef77c8e56430fa9dd256d152b42",
+          "source_project_path": "output/restyle-24/submitted-prompts/396.txt"
+        }
+      },
+      "steps": [
+        {
+          "action": "generate",
+          "input_order": [
+            "06-396/source.jpg",
+            "06-396/reference.webp"
+          ],
+          "prompt": "06-396/prompt.txt",
+          "output": "06-396/result.png"
+        }
+      ],
+      "record_source_project_path": "output/restyle-24/jobs.json"
+    },
+    {
+      "rank": 7,
+      "style_code": 402,
+      "title": "Emerald Veil",
+      "title_zh": "翡翠红纱",
+      "mode": "模板重演 / 主体适配",
+      "highlight": "自然肤色肖像转为绿肤侧脸、透明红纱与深绿服饰。",
+      "iteration": "第3版，前两版后调整整体侧姿与取色；最终由原图＋模板重新生成。",
+      "limitations": "绿色仍比模板偏黄、饱和度略低，未完全复刻参考肤色。",
+      "files": {
+        "source": {
+          "path": "07-402/source.jpg",
+          "sha256": "22d69ca6c1678d8017ed35ce9e7f412f6b60105f909d86ca9995908bb848409c",
+          "source_project_path": "output/restyle-24/sources/portrait-main.jpg"
+        },
+        "reference": {
+          "path": "07-402/reference.webp",
+          "sha256": "ae61db20f4b90ae995b55ce330fed51f1f065ef8b5112f076db6056687dab0a0",
+          "source_project_path": "images/6a4df1ea000000000f02bc3b_02.webp"
+        },
+        "result": {
+          "path": "07-402/result.png",
+          "sha256": "b5fdeea44338f19cf28b76f384f869d6e87f492b0052ac39e7f44c41958dfc99",
+          "source_project_path": "output/restyle-24/results/402-v3-color.png"
+        },
+        "prompt": {
+          "path": "07-402/prompt.txt",
+          "sha256": "776b7b549c75a74af0bb03663b1fc71652b2506b9d8123bf84b0924857c0228d",
+          "source_project_path": "output/restyle-24/submitted-prompts/402-v3-color.txt"
+        }
+      },
+      "steps": [
+        {
+          "action": "generate",
+          "input_order": [
+            "07-402/source.jpg",
+            "07-402/reference.webp"
+          ],
+          "prompt": "07-402/prompt.txt",
+          "output": "07-402/result.png"
+        }
+      ],
+      "record_source_project_path": "output/restyle-24/jobs.json"
+    },
+    {
+      "rank": 8,
+      "style_code": 407,
+      "title": "Stairway Reverie",
+      "title_zh": "星阶梦游",
+      "mode": "模板重演 / 主体适配",
+      "highlight": "近景照片转成蘑菇、彩阶与星空中的完整坐姿，头颈衔接自然。",
+      "iteration": "第3版，修复前轮头颈姿态问题；最终由原图＋模板重新生成。",
+      "limitations": "脸部为小尺寸概括侧面，不能验证精确虹膜和五官一致。",
+      "files": {
+        "source": {
+          "path": "08-407/source.jpg",
+          "sha256": "22d69ca6c1678d8017ed35ce9e7f412f6b60105f909d86ca9995908bb848409c",
+          "source_project_path": "output/restyle-24/sources/portrait-main.jpg"
+        },
+        "reference": {
+          "path": "08-407/reference.webp",
+          "sha256": "4907bde2b5c5d4401581acf60fe0b1becf2531a3f64e0de99fbd5b39f6068357",
+          "source_project_path": "images/6a6325a9000000000f016219_02.webp"
+        },
+        "result": {
+          "path": "08-407/result.png",
+          "sha256": "46104d9191d2a851cb295cec7840caf97ad9a44918e25d46b4b85078b55123f7",
+          "source_project_path": "output/restyle-24/results/407-v3-pose.png"
+        },
+        "prompt": {
+          "path": "08-407/prompt.txt",
+          "sha256": "4046462bc9b205aecb9189f671105eda186c0fc42d74f767fde04bafd217c8f7",
+          "source_project_path": "output/restyle-24/submitted-prompts/407-v3-pose.txt"
+        }
+      },
+      "steps": [
+        {
+          "action": "generate",
+          "input_order": [
+            "08-407/source.jpg",
+            "08-407/reference.webp"
+          ],
+          "prompt": "08-407/prompt.txt",
+          "output": "08-407/result.png"
+        }
+      ],
+      "record_source_project_path": "output/restyle-24/reviews/407-v3-pose-record.json"
+    },
+    {
+      "rank": 9,
+      "style_code": 400,
+      "title": "Crayon Companion",
+      "title_zh": "蜡笔伙伴",
+      "mode": "保留结构换画法",
+      "highlight": "保留狗与居家环境，用全画面蜡笔短触和纸齿将照片转为绘画。",
+      "iteration": "结构保留批次单独生成；无后续编辑记录。",
+      "limitations": "整体布局保留但小物细节与线条简化，不能宣称逐物像素级不变。",
+      "files": {
+        "source": {
+          "path": "09-400/source.jpg",
+          "sha256": "c1c0dd018fe00583cc011903687392295b7d212f08cbc80cd6819ae1c17824f1",
+          "source_project_path": "output/restyle-24/sources/objects-dog-daisy.jpg"
+        },
+        "reference": {
+          "path": "09-400/reference.webp",
+          "sha256": "92ddb8690daa66ef466cf8c2a08831ab65e024afc278c8fb095bf9805d2b0efe",
+          "source_project_path": "images/6a4253db000000001100483c_02.webp"
+        },
+        "result": {
+          "path": "09-400/result.png",
+          "sha256": "44c9617514f104795cc1b18de54b3a49cdd9c65aa24ce0844e0005d4e56b365c",
+          "source_project_path": "output/restyle-24-structure/results/400.png"
+        },
+        "prompt": {
+          "path": "09-400/prompt.txt",
+          "sha256": "22957141e69ecec307075a06c9c77a67af19b4b7cbcd8e20cad8daee92d4fb22",
+          "source_project_path": "output/restyle-24-structure/prompts/400.txt"
+        }
+      },
+      "steps": [
+        {
+          "action": "generate",
+          "input_order": [
+            "09-400/source.jpg",
+            "09-400/reference.webp"
+          ],
+          "prompt": "09-400/prompt.txt",
+          "output": "09-400/result.png"
+        }
+      ],
+      "record_source_project_path": "output/restyle-24-structure/manifest.json"
+    },
+    {
+      "rank": 10,
+      "style_code": 393,
+      "title": "Pearlescent Bloom",
+      "title_zh": "珠光花冠",
+      "mode": "模板重演 / 主体适配",
+      "highlight": "粉蓝高明度、花瓣遮挡与珍珠宝石将普通人像改写为甜美幻想插画。",
+      "iteration": "案例记录没有后续修正字段。",
+      "limitations": "五官和头发比模板更细腻，卡通概括程度稍弱；面部部分遮挡。",
+      "files": {
+        "source": {
+          "path": "10-393/source.jpg",
+          "sha256": "8b82ad3e34bf51af1c8e5a35286f50c89b0b5830c681947492a5c3036e280870",
+          "source_project_path": "output/风格重演15种-离线分享/assets/originals/portrait.jpg"
+        },
+        "reference": {
+          "path": "10-393/reference.webp",
+          "sha256": "3d810fd6994ad0990cc91dc9f1fd083f66045ac8de90051dd81937f01104f3de",
+          "source_project_path": "output/风格重演15种-离线分享/assets/references/393.webp"
+        },
+        "result": {
+          "path": "10-393/result.png",
+          "sha256": "412e7437adc515a00b48903fbe5b364c70dca6ed3ba49d9287740186acdb3a66",
+          "source_project_path": "output/风格重演15种-离线分享/assets/results/393.png"
+        },
+        "prompt": {
+          "path": "10-393/prompt.txt",
+          "sha256": "22ad17b41d55b29af4939e8c88e35bd8e7f99e070a47977709e0974f3888328c",
+          "source_project_path": "output/风格重演15种-离线分享/prompts/393-generation.txt"
+        }
+      },
+      "steps": [
+        {
+          "action": "generate",
+          "input_order": [
+            "10-393/source.jpg",
+            "10-393/reference.webp"
+          ],
+          "prompt": "10-393/prompt.txt",
+          "output": "10-393/result.png"
+        }
+      ],
+      "record_source_project_path": "output/style-gallery-15/style-393.json"
+    }
+  ]
+}

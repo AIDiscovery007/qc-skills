@@ -1,0 +1,44 @@
+{
+  "rank": 1,
+  "style_code": 395,
+  "title": "Dreamlight",
+  "title_zh": "梦幻星芒",
+  "mode": "模板重演 / 主体适配",
+  "highlight": "黑色剪影、粉红点阵眼镜与星芒把日常肖像重演为梦幻未来主义。",
+  "iteration": "本次文件记录为原图＋模板生成；项目中存在较早395迭代，不能当作全项目首次尝试。",
+  "limitations": "面部按设计藏于阴影，不能据此验证精确五官身份；手部叠放可读。",
+  "files": {
+    "source": {
+      "path": "01-395/source.jpg",
+      "sha256": "8b82ad3e34bf51af1c8e5a35286f50c89b0b5830c681947492a5c3036e280870",
+      "source_project_path": "hanfeng-influencer-06.jpg"
+    },
+    "reference": {
+      "path": "01-395/reference.webp",
+      "sha256": "1d018679cef8b6b2e9ff5c08cd18cce2e881035e4706a3d54a36417add05ef12",
+      "source_project_path": "images/6a265475000000003502728b_02.webp"
+    },
+    "result": {
+      "path": "01-395/result.png",
+      "sha256": "68f3549ab773eec59e42f7fbbd94f020ff6c9a5532495aa06a84a0cef4e566e8",
+      "source_project_path": "output/imagegen/hanfeng-06-style395-20260924.png"
+    },
+    "prompt": {
+      "path": "01-395/prompt.txt",
+      "sha256": "f5d47b9211ef95ee5e8abac85678ba4e998b9ce1774d21cd4bb2e5c7bf5dd0ad",
+      "source_project_path": "output/imagegen/hanfeng-06-style395-20260924-prompt.txt"
+    }
+  },
+  "steps": [
+    {
+      "action": "generate",
+      "input_order": [
+        "01-395/source.jpg",
+        "01-395/reference.webp"
+      ],
+      "prompt": "01-395/prompt.txt",
+      "output": "01-395/result.png"
+    }
+  ],
+  "record_source_project_path": "output/imagegen/hanfeng-06-style394-395-20260924-manifest.json"
+}

@@ -1,0 +1,61 @@
+{
+  "rank": 2,
+  "style_code": 394,
+  "title": "Gilded Tide",
+  "title_zh": "青蓝金纹",
+  "mode": "模板重演 / 主体适配",
+  "highlight": "青蓝漫画、金色纹样和环绕云浪形成高度鲜明的视觉重构。",
+  "iteration": "一次主体生成后有一次仅清理右下角角标的编辑；两步prompt均须保留。",
+  "limitations": "输出五官比模板更精细；最终版本已局部清除复制的角标。",
+  "files": {
+    "source": {
+      "path": "02-394/source.jpg",
+      "sha256": "8b82ad3e34bf51af1c8e5a35286f50c89b0b5830c681947492a5c3036e280870",
+      "source_project_path": "hanfeng-influencer-06.jpg"
+    },
+    "reference": {
+      "path": "02-394/reference.webp",
+      "sha256": "662bbc623cfd73f1d592d5a14396c9aee8dfc72c1ce69f3e865f9faac3febc9f",
+      "source_project_path": "images/6a1fee48000000002202afed_02.webp"
+    },
+    "result": {
+      "path": "02-394/result.png",
+      "sha256": "1c7cd53113e264088edccf80961a0f29cf8ecc243654a37f120d502494c065b6",
+      "source_project_path": "output/imagegen/hanfeng-06-style394-20260924.png"
+    },
+    "prompt": {
+      "path": "02-394/prompt.txt",
+      "sha256": "53ebf5f5f33c7715e03fa0760748b72728f0ef92ea06e6d306acac52d740427f",
+      "source_project_path": "output/imagegen/hanfeng-06-style394-20260924-prompt.txt"
+    },
+    "before_cleanup": {
+      "path": "02-394/before-cleanup.png",
+      "sha256": "647fd4a5ae2934ffb749d5a4b63f90898a89973a447ccd0d2d20847b5c5db470"
+    },
+    "cleanup_prompt": {
+      "path": "02-394/cleanup-prompt.txt",
+      "sha256": "56e5bf3f8af71fd623b968a92fcef96d54bc79a161687f9df2da7c655a6ac925"
+    }
+  },
+  "steps": [
+    {
+      "action": "generate",
+      "input_order": [
+        "02-394/source.jpg",
+        "02-394/reference.webp"
+      ],
+      "prompt": "02-394/prompt.txt",
+      "output": "02-394/before-cleanup.png"
+    },
+    {
+      "action": "edit",
+      "input_order": [
+        "02-394/before-cleanup.png"
+      ],
+      "prompt": "02-394/cleanup-prompt.txt",
+      "output": "02-394/result.png",
+      "reason": "Remove tiny bottom-right corner watermark copied from reference"
+    }
+  ],
+  "record_source_project_path": "output/imagegen/hanfeng-06-style394-395-20260924-manifest.json"
+}

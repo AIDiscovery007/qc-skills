@@ -1,0 +1,44 @@
+{
+  "rank": 8,
+  "style_code": 407,
+  "title": "Stairway Reverie",
+  "title_zh": "星阶梦游",
+  "mode": "模板重演 / 主体适配",
+  "highlight": "近景照片转成蘑菇、彩阶与星空中的完整坐姿，头颈衔接自然。",
+  "iteration": "第3版，修复前轮头颈姿态问题；最终由原图＋模板重新生成。",
+  "limitations": "脸部为小尺寸概括侧面，不能验证精确虹膜和五官一致。",
+  "files": {
+    "source": {
+      "path": "08-407/source.jpg",
+      "sha256": "22d69ca6c1678d8017ed35ce9e7f412f6b60105f909d86ca9995908bb848409c",
+      "source_project_path": "output/restyle-24/sources/portrait-main.jpg"
+    },
+    "reference": {
+      "path": "08-407/reference.webp",
+      "sha256": "4907bde2b5c5d4401581acf60fe0b1becf2531a3f64e0de99fbd5b39f6068357",
+      "source_project_path": "images/6a6325a9000000000f016219_02.webp"
+    },
+    "result": {
+      "path": "08-407/result.png",
+      "sha256": "46104d9191d2a851cb295cec7840caf97ad9a44918e25d46b4b85078b55123f7",
+      "source_project_path": "output/restyle-24/results/407-v3-pose.png"
+    },
+    "prompt": {
+      "path": "08-407/prompt.txt",
+      "sha256": "4046462bc9b205aecb9189f671105eda186c0fc42d74f767fde04bafd217c8f7",
+      "source_project_path": "output/restyle-24/submitted-prompts/407-v3-pose.txt"
+    }
+  },
+  "steps": [
+    {
+      "action": "generate",
+      "input_order": [
+        "08-407/source.jpg",
+        "08-407/reference.webp"
+      ],
+      "prompt": "08-407/prompt.txt",
+      "output": "08-407/result.png"
+    }
+  ],
+  "record_source_project_path": "output/restyle-24/reviews/407-v3-pose-record.json"
+}

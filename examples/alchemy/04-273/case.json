@@ -1,0 +1,44 @@
+{
+  "rank": 4,
+  "style_code": 273,
+  "title": "Floating City",
+  "title_zh": "悬浮城市",
+  "mode": "模板重演 / 主体适配",
+  "highlight": "原建筑轮廓转成精细透明水层与悬浮地下剖面，跨场景效果强。",
+  "iteration": "记录为该组生成版本；无后续修正记录。",
+  "limitations": "地下结构及细小标注是艺术想象，不是可用工程图。",
+  "files": {
+    "source": {
+      "path": "04-273/source.jpg",
+      "sha256": "d8f8fd02e385895d2db94f7b0d25ededcd49b6d87447cd6ed6330eade96373a4",
+      "source_project_path": "output/restyle-24/sources/generic-street-madrid.jpg"
+    },
+    "reference": {
+      "path": "04-273/reference.webp",
+      "sha256": "8246319940b6b5e99ffaabd1106bfca0d91c022aa24868404769322b6afbaa82",
+      "source_project_path": "images/687a5728000000000d01b672_02.webp"
+    },
+    "result": {
+      "path": "04-273/result.png",
+      "sha256": "194ebee60c4f044a833b03f9f9c9df948917c2e98e166f0cdcca5d6142d09eef",
+      "source_project_path": "output/restyle-24/results/273.png"
+    },
+    "prompt": {
+      "path": "04-273/prompt.txt",
+      "sha256": "8dc6bdb60a0113de7ec45d19d4a4adb35f95052e5aef69bf27abbef27275a2b5",
+      "source_project_path": "output/restyle-24/submitted-prompts/273.txt"
+    }
+  },
+  "steps": [
+    {
+      "action": "generate",
+      "input_order": [
+        "04-273/source.jpg",
+        "04-273/reference.webp"
+      ],
+      "prompt": "04-273/prompt.txt",
+      "output": "04-273/result.png"
+    }
+  ],
+  "record_source_project_path": "output/restyle-24/jobs.json"
+}

@@ -1,0 +1,44 @@
+{
+  "rank": 3,
+  "style_code": 405,
+  "title": "Jellyfish Nocturne",
+  "title_zh": "水母夜城",
+  "mode": "模板重演 / 主体适配",
+  "highlight": "同一街区变成暖金灯阵与发光水母交织的奇幻水域。",
+  "iteration": "记录为该组首轮；无后续修正记录。",
+  "limitations": "重建道路为水面并增加奇幻元素，属于模板重演，不是严格保留结构。",
+  "files": {
+    "source": {
+      "path": "03-405/source.jpg",
+      "sha256": "d8f8fd02e385895d2db94f7b0d25ededcd49b6d87447cd6ed6330eade96373a4",
+      "source_project_path": "output/restyle-24/sources/generic-street-madrid.jpg"
+    },
+    "reference": {
+      "path": "03-405/reference.webp",
+      "sha256": "9ba57bf4f5b275a441e9a116f6faae9b4bef30f5bde6396f83b5e394de300e76",
+      "source_project_path": "images/6a5727cb000000001101f687_02.webp"
+    },
+    "result": {
+      "path": "03-405/result.png",
+      "sha256": "870f91da027533dbfeb1c9e490a1eee9572fd0c0dd5e873703e51778acbce9b4",
+      "source_project_path": "output/restyle-24/results/405.png"
+    },
+    "prompt": {
+      "path": "03-405/prompt.txt",
+      "sha256": "56f9069825dade45b424c07f1f90c9c545d617ea594674106244e2ab952c69d4",
+      "source_project_path": "output/restyle-24/submitted-prompts/405.txt"
+    }
+  },
+  "steps": [
+    {
+      "action": "generate",
+      "input_order": [
+        "03-405/source.jpg",
+        "03-405/reference.webp"
+      ],
+      "prompt": "03-405/prompt.txt",
+      "output": "03-405/result.png"
+    }
+  ],
+  "record_source_project_path": "output/restyle-24/jobs.json"
+}
