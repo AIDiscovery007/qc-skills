@@ -60,7 +60,7 @@ scripts/list-skills.sh      # lists published SKILL.md files
 - "Release/publish a version" means adding the skill's current path to the manifest; it does not require moving the skill to `skills/published/`.
 - Only move a skill to `skills/published/` when explicitly doing a formal published release.
 - `skills/incubating/` skills may be distributed for iteration when they are intentionally added to the manifest.
-- `skills/archive/` is never added to the manifest.
+- `skills/archive/` is never added to the manifest; rename retired entrypoints to `SKILL.md.archived` so `npx skills` does not discover them.
 - Every distributable skill must contain a `SKILL.md`.
 - Skill `name` and `description` should be in English for reliable agent triggering.
 
@@ -68,7 +68,7 @@ scripts/list-skills.sh      # lists published SKILL.md files
 - “发布一版”表示把 skill 当前路径加入分发清单，不要求移动到 `skills/published/`。
 - 只有明确做“正式发布”时，才把 skill 移动到 `skills/published/`。
 - `skills/incubating/` 中的 skill 可以作为迭代版进入分发清单。
-- `skills/archive/` 永远不进入分发清单。
+- `skills/archive/` 永远不进入分发清单；退役入口改名为 `SKILL.md.archived`，避免被 `npx skills` 自动发现。
 - 每个可分发的 skill 都必须包含 `SKILL.md`。
 - skill 的 `name` 和 `description` 建议使用英文，便于 agent 稳定触发。
 
