@@ -3,6 +3,7 @@
 <p align="center">
   <a href="#qc-alchemy">精选技能</a> ·
   <a href="examples/alchemy/">效果画廊</a> ·
+  <a href="#qc-motion-design">交互动效</a> ·
   <a href="#install">安装使用</a> ·
   <a href="#skills">全部技能</a>
 </p>
@@ -46,6 +47,24 @@
 
 <sub>以上为技能迭代过程中的精选结果，部分经过多轮修正，并非当前版本一次运行的统一测试。完整画廊保留原图、参考、实际提示词与各案例的生成条件。</sub>
 
+<a id="qc-motion-design"></a>
+
+## qc-motion-design · 让交互变化有据可循
+
+设计、实现与审查组件动效，处理反馈、状态切换、拖拽、缓动与减少动态效果。随 skill 附带 **Motion cases：28 个可操作组件、36 种模式、72 条实现提示词**，可浏览效果、查看设计原因与原文索引，也可复用代码。
+
+```bash
+npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-motion-design
+```
+
+安装后，把目标页面或代码交给 Agent：
+
+> 使用 qc-motion-design，参考 Motion cases 的按钮按压反馈，为当前提交按钮添加动效，沿用项目样式并处理键盘和减少动态效果路径。
+
+想先看案例，可以说：“启动 qc-motion-design 随附的 Motion cases”。进入案例的 **Source Notes**，选择“从零实现”或“优化已有”，复制提示词即可开始。
+
+**[案例运行与使用说明 →](skills/published/qc-motion-design/assets/motion-cases/README.md)** · [阅读技能说明](skills/published/qc-motion-design/SKILL.md)
+
 <a id="install"></a>
 
 ## 安装 / Install
@@ -80,6 +99,7 @@ npx skills add https://github.com/AIDiscovery007/qc-skills --all
 
 | Skill | 用途 / Purpose |
 | :--- | :--- |
+| [qc-motion-design](skills/published/qc-motion-design/SKILL.md) | 组件交互动效设计、实现与审查 / Frontend interaction motion · [Motion cases](examples/motion-cases/) |
 | [qc-alchemy](skills/published/qc-alchemy/SKILL.md) | 参考图逆向、视觉风格提炼与主体适配 / Reference-driven visual recreation |
 | [qc-image-series](skills/published/qc-image-series/SKILL.md) | 封面、轮播与系列图片的一致提示词 / Consistent image-series prompts |
 | [qc-essence](skills/published/qc-essence/SKILL.md) | 提炼问题、文章与方案的关键本质 / Distill the decisive essence |
@@ -98,6 +118,7 @@ skills/published/           # 正式发布的技能
 skills/incubating/          # 迭代中的技能
 skills/archive/             # 已归档，不参与分发
 examples/alchemy/           # 10 组原图、参考、结果与实际提示词
+examples/motion-cases/      # 动效案例入口；完整资源位于 skill 的 assets/motion-cases/
 .claude-plugin/plugin.json  # 分发清单
 templates/skill/            # 编写模板
 scripts/list-skills.sh      # 列出正式发布的技能

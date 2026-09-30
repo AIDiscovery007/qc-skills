@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f9f6">
+  <title>Motion cases — qc-motion-design</title>
+  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="advanced-motion.css?v=3">
+  <script src="advanced-components.js?v=3" defer></script>
+  <script src="source-notes.js?v=1" defer></script>
+  <link rel="stylesheet" href="extra-motion.css?v=3">
+  <script src="extra-components.js?v=4" defer></script>
+  <script src="motion-prompts.js?v=1" defer></script>
+  <script src="app.js?v=9" defer></script>
+  <script src="advanced-motion.js?v=3" defer></script>
+  <script src="extra-motion.js?v=5" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#components">跳到组件</a>
+  <header class="topbar" id="top">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">✳</span> motion cases<span class="brand-edition">BY QC</span></a>
+    <div class="top-actions">
+      <button id="search-trigger" class="search-control" aria-label="搜索组件"><span data-icon="search"></span><span class="search-label">搜索</span><kbd>⌘ K</kbd></button>
+      <button id="motion-toggle" class="motion-control" role="switch" aria-label="标准动效" aria-checked="true"><span class="status-dot"></span><span id="motion-label">动效开启</span></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div><div class="eyebrow">INTERACTION COLLECTION / 001</div><h1 id="hero-title">让交互有回声<span>。</span></h1><p>28 个动效实验，点击即体验。</p></div>
+      <div class="hero-index" aria-hidden="true">28<span>SMALL INTERACTIONS<br>THOUGHTFULLY MADE</span></div>
+    </section>
+    <section class="collection" id="components" aria-label="交互组件">
+      <div class="filter-row"><div class="filters" aria-label="组件分类">
+        <button class="filter active" data-filter="all" aria-pressed="true">全部 <span>28</span></button>
+        <button class="filter" data-filter="basic" aria-pressed="false">基础 <span>10</span></button>
+        <button class="filter" data-filter="advanced" aria-pressed="false">进阶 <span>18</span></button>
+      </div><span class="filter-note" id="result-count" aria-live="polite">28 / 28</span></div>
+      <div id="component-grid" class="component-grid"></div>
+      <p id="filter-status" class="sr-only" aria-live="polite"></p>
+    </section>
+    <details id="references" class="references"><summary>参考原文 <span>03 ↗</span></summary><div id="reference-list"></div></details>
+    <footer><span>qc-motion-design</span><a href="#top">回到顶部 ↑</a></footer>
+  </main>
+  <dialog id="source-dialog" class="source-dialog" aria-labelledby="source-title"><div class="dialog-heading"><div><div class="eyebrow">SOURCE NOTES</div><h2 id="source-title">设计依据</h2></div><button class="icon-button close-dialog" aria-label="关闭设计依据" data-icon="close"></button></div><div id="source-content"></div><div class="dialog-footnote">设计理念概括见原文索引；实现提示词结合 Skill 与本例行为编写。</div></dialog>
+  <dialog id="demo-dialog" class="demo-dialog" aria-labelledby="modal-title"><button class="icon-button close-dialog modal-close" aria-label="关闭预览" data-icon="close"></button><div class="modal-symbol" data-icon="layers"></div><div class="eyebrow">A MOMENT OF FOCUS</div><h2 id="modal-title">给重要的内容，一点空间。</h2><p>背景退后，当前任务向前。<br>关闭之后，焦点会回到打开它的按钮。</p><button class="primary close-dialog">明白了 <span>↗</span></button><small>也可以按 Esc 关闭</small></dialog>
+  <dialog id="command-dialog" class="command-dialog" aria-label="搜索组件"><div class="command-search"><span data-icon="search"></span><input id="command-search" placeholder="搜索组件或设计原则…" aria-label="搜索组件" autocomplete="off"><button class="keycap close-dialog" aria-label="关闭搜索">esc</button></div><div id="command-results" role="listbox" aria-label="搜索结果"></div><div class="command-footer"><span>↑ ↓ 选择　↵ 跳转</span><span>即时响应 · 无动画</span></div></dialog>
+  <div id="global-status" class="sr-only" role="status"></div>
+</body>
+</html>

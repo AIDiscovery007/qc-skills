@@ -5,6 +5,7 @@
     "./skills/published/qc-essence",
     "./skills/published/qc-image-series",
     "./skills/published/qc-alchemy",
-    "./skills/incubating/qc-expert-casting"
+    "./skills/incubating/qc-expert-casting",
+    "./skills/published/qc-motion-design"
   ]
 }

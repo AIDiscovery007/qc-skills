@@ -1,0 +1,3 @@
+interface:
+  display_name: "qc-motion-design"
+  short_description: "设计、实现与审查组件动效，处理状态反馈、缓动时长、手势及无障碍路径"
