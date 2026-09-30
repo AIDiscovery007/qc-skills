@@ -53,7 +53,7 @@
 
 设计、实现与审查组件动效，处理反馈、状态切换、拖拽、缓动与减少动态效果。随 skill 附带 **Motion cases：28 个可操作组件、36 种模式、72 条实现提示词**，可浏览效果、查看设计原因与原文索引，也可复用代码。
 
-[![Motion cases 交互动效画廊](examples/motion-cases/media/motion-cases.jpg)](examples/motion-cases/)
+**[查看 Motion cases 交互动效案例与运行说明 →](examples/motion-cases/)**
 
 <table>
   <tr>
