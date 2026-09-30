@@ -14,7 +14,7 @@
 
 ## qc-alchemy · 一张参考图，另一种视觉世界
 
-从参考图中拆解构图、色彩、材质与视觉关系，写成可执行的复刻提示词，再迁移到你的主体。支持模板重演、跨主体适配，以及保留结构换画法。
+拆解参考图的构图、色彩与材质，提炼可执行提示词，复刻画面、迁移主体或保留结构换画法。
 
 *Turn visual references into actionable prompts and transferable styles.*
 
@@ -45,15 +45,19 @@
 
 **[浏览全部 10 组对照案例 →](examples/alchemy/)** · [阅读技能说明](skills/published/qc-alchemy/SKILL.md)
 
-<sub>以上为技能迭代过程中的精选结果，部分经过多轮修正，并非当前版本一次运行的统一测试。完整画廊保留原图、参考、实际提示词与各案例的生成条件。</sub>
+<sub>以上为迭代精选，部分经过多轮修正，不代表当前版本的一次生成效果；各案例保留原图、参考与实际提示词。</sub>
+
+附上原图和风格参考后，对 Agent 说：
+
+> 使用 qc-alchemy，以图 1 为主体，按图 2 的构图、色彩和材质重演画面。先给出提示词，再生成结果。
+
+生成图片需配合图像生成工具，也可只提取提示词。
 
 <a id="qc-motion-design"></a>
 
 ## qc-motion-design · 让交互变化有据可循
 
-设计、实现与审查组件动效，处理反馈、状态切换、拖拽、缓动与减少动态效果。随 skill 附带 **Motion cases：28 个可操作组件、36 种模式、72 条实现提示词**，可浏览效果、查看设计原因与原文索引，也可复用代码。
-
-**[查看 Motion cases 交互动效案例与运行说明 →](examples/motion-cases/)**
+设计、实现与审查组件动效，处理反馈、状态切换、拖拽与无障碍适配。随附 **Motion cases：28 个可操作组件、36 种模式、72 条实现提示词**，包含设计依据和可复用代码。
 
 <table>
   <tr>
@@ -69,35 +73,26 @@
   </tr>
 </table>
 
-<sub>以上 GIF 来自实际案例，按原动画时间轴每 20ms 逐帧采集，保留原始缓动与错峰；起止状态增加短暂停留便于观察。GIF 的计时精度与色彩受格式限制，完整交互请运行 Motion cases。</sub>
+**完整交互请运行 [Motion cases →](skills/published/qc-motion-design/assets/motion-cases/README.md)**
 
-```bash
-npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-motion-design
-```
+安装后，对 Agent 说：
 
-安装后，把目标页面或代码交给 Agent：
+> 启动 qc-motion-design 随附的 Motion cases。
 
-> 使用 qc-motion-design，参考 Motion cases 的按钮按压反馈，为当前提交按钮添加动效，沿用项目样式并处理键盘和减少动态效果路径。
-
-想先看案例，可以说：“启动 qc-motion-design 随附的 Motion cases”。进入案例的 **Source Notes**，选择“从零实现”或“优化已有”，复制提示词即可开始。
-
-**[案例运行与使用说明 →](skills/published/qc-motion-design/assets/motion-cases/README.md)** · [阅读技能说明](skills/published/qc-motion-design/SKILL.md)
+选择案例，打开 **Source Notes**，复制“从零实现”或“优化已有”的提示词，附上目标页面或代码即可使用。[阅读技能说明](skills/published/qc-motion-design/SKILL.md)
 
 <a id="install"></a>
 
 ## 安装 / Install
 
-安装 `qc-alchemy`：
+按需安装：
 
 ```bash
 npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-alchemy
+npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-motion-design
 ```
 
-附上原图和风格参考后，可以这样开始：
-
-> 使用 qc-alchemy，以图 1 为主体，按图 2 的构图、色彩和材质重演画面。先给出可执行提示词，再生成结果。
-
-生成图片需配合可用的图像生成工具；也可以只提取提示词或风格方案。
+其他技能只需替换 `--skill` 后的名称，见下方目录。
 
 <details>
 <summary>查看可安装技能 / 安装全部</summary>
@@ -129,7 +124,8 @@ npx skills add https://github.com/AIDiscovery007/qc-skills --all
 | :--- | :--- |
 | [qc-expert-casting](skills/incubating/qc-expert-casting/SKILL.md) | 为问题选择合适的专家视角，生成提示词或子代理指令 / Cast an expert lens |
 
-## 仓库结构 / Repository
+<details>
+<summary>仓库结构与维护 / Repository & maintenance</summary>
 
 ```text
 skills/published/           # 正式发布的技能
@@ -142,25 +138,12 @@ templates/skill/            # 编写模板
 scripts/list-skills.sh      # 列出正式发布的技能
 ```
 
-<details>
-<summary>Maintainer notes / 维护者说明</summary>
+分发规则：
 
-### Distribution Rules / 分发规则
+- 在 [分发清单](.claude-plugin/plugin.json) 中添加 skill 的实际路径即可发布；只有正式发布才移入 `published/`，迭代版可留在 `incubating/`。
+- 归档技能不参与分发；将退役入口改名为 `SKILL.md.archived`，避免被自动发现。
+- 每个分发技能须有 `SKILL.md`，包含 `name` 与 `description`，建议使用英文。
 
-- `.claude-plugin/plugin.json` is the distribution manifest used by `npx skills`.
-- "Release/publish a version" means adding the skill's current path to the manifest; it does not require moving the skill to `skills/published/`.
-- Only move a skill to `skills/published/` when explicitly doing a formal published release.
-- `skills/incubating/` skills may be distributed for iteration when they are intentionally added to the manifest.
-- `skills/archive/` is never added to the manifest; rename retired entrypoints to `SKILL.md.archived` so `npx skills` does not discover them.
-- Every distributable skill must contain a `SKILL.md`.
-- Skill `name` and `description` should be in English for reliable agent triggering.
-
-- `.claude-plugin/plugin.json` 是 `npx skills` 使用的分发清单。
-- “发布一版”表示把 skill 当前路径加入分发清单，不要求移动到 `skills/published/`。
-- 只有明确做“正式发布”时，才把 skill 移动到 `skills/published/`。
-- `skills/incubating/` 中的 skill 可以作为迭代版进入分发清单。
-- `skills/archive/` 永远不进入分发清单；退役入口改名为 `SKILL.md.archived`，避免被 `npx skills` 自动发现。
-- 每个可分发的 skill 都必须包含 `SKILL.md`。
-- skill 的 `name` 和 `description` 建议使用英文，便于 agent 稳定触发。
+发布检查清单见 [AGENTS.md](AGENTS.md)，新建技能可参考 [模板](templates/skill/)。
 
 </details>
