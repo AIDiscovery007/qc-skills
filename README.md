@@ -53,6 +53,24 @@
 
 设计、实现与审查组件动效，处理反馈、状态切换、拖拽、缓动与减少动态效果。随 skill 附带 **Motion cases：28 个可操作组件、36 种模式、72 条实现提示词**，可浏览效果、查看设计原因与原文索引，也可复用代码。
 
+[![Motion cases 交互动效画廊](examples/motion-cases/media/motion-cases.jpg)](examples/motion-cases/)
+
+<table>
+  <tr>
+    <td width="50%" align="center"><a href="examples/motion-cases/media/flip.gif"><img src="examples/motion-cases/media/flip.gif" alt="立体翻面：卡片沿纵轴旋转，展示同一对象的正反两面" width="100%"></a><br><strong>立体翻面</strong><br><sub>保留空间关系，揭示另一面</sub></td>
+    <td width="50%" align="center"><a href="examples/motion-cases/media/shared.gif"><img src="examples/motion-cases/media/shared.gif" alt="共享元素：缩略色块连续扩展为详情，再回到原位置" width="100%"></a><br><strong>共享元素</strong><br><sub>从缩略到详情，保持对象连续</sub></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td width="33%" align="center"><a href="examples/motion-cases/media/slide.gif"><img src="examples/motion-cases/media/slide.gif" alt="侧滑面板：详情从右侧进入，背景轻退，关闭时沿原方向退出" width="100%"></a><br><strong>侧滑面板</strong><br><sub>滑入详情，保留上下文</sub></td>
+    <td width="33%" align="center"><a href="examples/motion-cases/media/stagger.gif"><img src="examples/motion-cases/media/stagger.gif" alt="错峰展开：四条任务按先后顺序依次显现，再收起" width="100%"></a><br><strong>错峰展开</strong><br><sub>依次出现，解释任务顺序</sub></td>
+    <td width="33%" align="center"><a href="examples/motion-cases/media/pop.gif"><img src="examples/motion-cases/media/pop.gif" alt="弹性出现：成就卡片轻微超调弹入，再缩小淡出" width="100%"></a><br><strong>弹性出现</strong><br><sub>轻微超调，回应成就反馈</sub></td>
+  </tr>
+</table>
+
+<sub>以上 GIF 来自实际案例，按原动画时间轴每 20ms 逐帧采集，保留原始缓动与错峰；起止状态增加短暂停留便于观察。GIF 的计时精度与色彩受格式限制，完整交互请运行 Motion cases。</sub>
+
 ```bash
 npx skills add https://github.com/AIDiscovery007/qc-skills --skill qc-motion-design
 ```
@@ -99,8 +117,8 @@ npx skills add https://github.com/AIDiscovery007/qc-skills --all
 
 | Skill | 用途 / Purpose |
 | :--- | :--- |
-| [qc-motion-design](skills/published/qc-motion-design/SKILL.md) | 组件交互动效设计、实现与审查 / Frontend interaction motion · [Motion cases](examples/motion-cases/) |
 | [qc-alchemy](skills/published/qc-alchemy/SKILL.md) | 参考图逆向、视觉风格提炼与主体适配 / Reference-driven visual recreation |
+| [qc-motion-design](skills/published/qc-motion-design/SKILL.md) | 组件交互动效设计、实现与审查 / Frontend interaction motion · [Motion cases](examples/motion-cases/) |
 | [qc-image-series](skills/published/qc-image-series/SKILL.md) | 封面、轮播与系列图片的一致提示词 / Consistent image-series prompts |
 | [qc-essence](skills/published/qc-essence/SKILL.md) | 提炼问题、文章与方案的关键本质 / Distill the decisive essence |
 | [qc-skills-setup](skills/published/qc-skills-setup/SKILL.md) | 将 AGENTS.md 桥接到 Claude 风格的指令 / Agent instruction compatibility |
