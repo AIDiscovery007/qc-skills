@@ -6,6 +6,7 @@
     "./skills/published/qc-image-series",
     "./skills/published/qc-alchemy",
     "./skills/incubating/qc-expert-casting",
-    "./skills/published/qc-motion-design"
+    "./skills/published/qc-motion-design",
+    "./skills/incubating/bdd-agents-handoff"
   ]
 }

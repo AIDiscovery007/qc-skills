@@ -123,6 +123,7 @@ npx skills add https://github.com/AIDiscovery007/qc-skills --all
 | Skill | 用途 / Purpose |
 | :--- | :--- |
 | [qc-expert-casting](skills/incubating/qc-expert-casting/SKILL.md) | 为问题选择合适的专家视角，生成提示词或子代理指令 / Cast an expert lens |
+| [bdd-agents-handoff](skills/incubating/bdd-agents-handoff/SKILL.md) | 先用 BDD 锁定行为，再编排开发代理分轮实现、审查与合并 / BDD-first planning and developer-agent orchestration |
 
 <details>
 <summary>仓库结构与维护 / Repository & maintenance</summary>
